@@ -1,35 +1,34 @@
-site_name: My Docs
+site_name: NewTars-Blog
 site_url: https://newtars.top
-
 theme:
   name: material
   language: zh
   palette:
-    - scheme: default
-      primary: indigo
+    - scheme: default       
+      primary: white
+      accent: lime
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate          
+      primary: black
       accent: indigo
       toggle:
-        icon: material/brightness-7
-        name: 切换到暗色模式
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: 切换到亮色模式
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - content.code.copy
+    - navigation.tabs        # 顶部标签栏导航
+    - navigation.sections    # 侧边栏分节
+    - navigation.top         # 回到顶部按钮
+    - search.suggest         # 搜索建议
+    - content.code.copy      # 代码块复制按钮
 
 markdown_extensions:
-  - pymdownx.highlight:
+  - pymdownx.highlight:      # 代码高亮
       anchor_linenums: true
-  - pymdownx.superfences
-  - admonition
-  - pymdownx.details
+  - pymdownx.superfences     # 代码围栏
+  - admonition               # 提示框（note、warning 等）
+  - pymdownx.details         # 可折叠内容
 
 nav:
   - 首页: index.md
