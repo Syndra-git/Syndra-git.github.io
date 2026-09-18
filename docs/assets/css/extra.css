@@ -58,6 +58,18 @@ body {
   margin: 0.5rem auto;
 }
 
+/* Center content when TOC is hidden */
+.md-content__inner {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Adjust layout when right sidebar (TOC) is hidden */
+.md-main__inner {
+  display: flex;
+  justify-content: center;
+}
+
 /* GitHub heatmap */
 .github-heatmap {
   text-align: center;
