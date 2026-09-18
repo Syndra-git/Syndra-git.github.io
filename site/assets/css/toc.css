@@ -1,0 +1,74 @@
+/* Right sidebar (TOC) - color-coded headings with hover animation */
+
+.md-sidebar--secondary > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+  color: #333 !important;
+  font-weight: 600;
+}
+
+.md-sidebar--secondary nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+  color: #555 !important;
+}
+
+.md-sidebar--secondary nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+  color: #777 !important;
+}
+
+.md-sidebar--secondary nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+  color: #999 !important;
+}
+
+.md-sidebar--secondary .md-nav__link {
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover colors */
+.md-sidebar--secondary > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link:hover {
+  color: #ff6b6b !important;
+  transform: scale(1.05);
+}
+
+.md-sidebar--secondary nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > .md-nav__link:hover {
+  color: #ffb347 !important;
+  transform: scale(1.05);
+}
+
+.md-sidebar--secondary nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > .md-nav__link:hover {
+  color: #5dade2 !important;
+  transform: scale(1.05);
+}
+
+/* Active heading indicator bar */
+.md-sidebar--secondary .md-nav__link--active::before,
+.md-sidebar--secondary .md-nav__item--active > .md-nav__link::before,
+.md-sidebar--secondary .md-nav__item--current > .md-nav__link::before {
+  content: "";
+  position: absolute;
+  left: -0.8rem;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--md-accent-fg-color);
+}
+
+/* Dark mode overrides */
+[data-md-color-scheme="slate"] .md-sidebar--secondary > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+  color: #abb2bf !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+  color: #8b95a5 !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link:hover {
+  color: #e06c75 !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > .md-nav__link:hover {
+  color: #d19a66 !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > nav.md-nav > .md-nav__list > .md-nav__item > .md-nav__link:hover {
+  color: #61afef !important;
+}

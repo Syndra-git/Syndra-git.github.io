@@ -1,39 +1,61 @@
 site_name: NewTars-Blog
 site_url: https://newtars.top
+
 theme:
   name: material
   language: zh
   palette:
-    - scheme: default       
+    - scheme: default
       primary: white
-      accent: lime
+      accent: indigo
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
-    - scheme: slate          
+    - scheme: slate
       primary: black
-      accent: indigo
+      accent: light blue
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
   features:
-    - navigation.tabs        # 顶部标签栏导航
-    - navigation.sections    # 侧边栏分节
-    - navigation.top         # 回到顶部按钮
-    - search.suggest         # 搜索建议
-    - content.code.copy      # 代码块复制按钮
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - content.code.copy
 
 markdown_extensions:
-  - pymdownx.highlight:      # 代码高亮
+  - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences     # 代码围栏
-  - admonition               # 提示框（note、warning 等）
-  - pymdownx.details         # 可折叠内容
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - assets/css/extra.css
+  - assets/css/toc.css
+  - assets/css/sidebar.css
+  - assets/css/read-metrics.css
+
+extra_javascript:
+  - assets/js/mathjax-config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/js/read-metrics.js
 
 nav:
-  - 首页: index.md
-  - 学习笔记:
-    - 网络安全: study/security.md
-    - CTF: study/ctf.md
-  - 工具: tools/index.md
-  - 关于: about.md
+  - Welcome: index.md
+  - as_student:
+    - as_student/index.md
+    - 前言: as_student/preface.md
+    - 计算机组成原理:
+      - as_student/computer_organization/index.md
+  - as_staff:
+    - as_staff/index.md
+  - as_reader:
+    - as_reader/index.md
+  - as_foreigner:
+    - as_foreigner/index.md

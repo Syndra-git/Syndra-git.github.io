@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Noto Serif SC', 'Georgia', 'Times New Roman', serif;
+}
+
+:root {
+  --page-bg-base: #fcfcfc;
+  --page-bg-grid: rgba(30, 30, 30, 0.035);
+  --page-bg-grid-bold: rgba(30, 30, 30, 0.06);
+  --md-default-bg-color: #fcfcfc;
+  --page-bg-grid-size: 32px;
+  --page-bg-grid-bold-size: 160px;
+}
+
+body {
+  background-color: var(--page-bg-base);
+  background-image:
+    linear-gradient(var(--page-bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--page-bg-grid) 1px, transparent 1px),
+    linear-gradient(var(--page-bg-grid-bold) 1px, transparent 1px),
+    linear-gradient(90deg, var(--page-bg-grid-bold) 1px, transparent 1px);
+  background-size:
+    var(--page-bg-grid-size) var(--page-bg-grid-size),
+    var(--page-bg-grid-size) var(--page-bg-grid-size),
+    var(--page-bg-grid-bold-size) var(--page-bg-grid-bold-size),
+    var(--page-bg-grid-bold-size) var(--page-bg-grid-bold-size);
+}
+
+.md-main {
+  background: transparent;
+}
+
+.md-grid {
+  max-width: max(85%, 65rem);
+}
+
+.md-content {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 0.5rem;
+}
+
+/* GitHub heatmap */
+.github-heatmap {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.github-heatmap img {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   One Dark Pro - Dark Mode
+   ═══════════════════════════════════════════════════════ */
+[data-md-color-scheme="slate"] {
+  --odp-bg: #282c34;
+  --odp-bg-light: #21252b;
+  --odp-bg-highlight: #2c313a;
+  --odp-fg: #abb2bf;
+  --odp-fg-dim: #5c6370;
+  --odp-red: #e06c75;
+  --odp-green: #98c379;
+  --odp-yellow: #e5c07b;
+  --odp-orange: #d19a66;
+  --odp-blue: #61afef;
+  --odp-purple: #c678dd;
+  --odp-cyan: #56b6c2;
+
+  --page-bg-base: var(--odp-bg);
+  --page-bg-grid: rgba(255, 255, 255, 0.02);
+  --page-bg-grid-bold: rgba(255, 255, 255, 0.04);
+
+  --md-default-bg-color: var(--odp-bg);
+  --md-default-fg-color: var(--odp-fg);
+  --md-default-fg-color--light: var(--odp-fg-dim);
+
+  --accent-ink: var(--odp-fg);
+  --ink-strong: #e6e6e6;
+  --ink-soft: var(--odp-fg);
+  --paper: var(--odp-bg-light);
+
+  --heading-h1: #e6e6e6;
+  --heading-h2: #dcdcdc;
+  --heading-h3: var(--odp-fg);
+}
+
+[data-md-color-scheme="slate"] body {
+  background-color: var(--page-bg-base);
+}
+
+[data-md-color-scheme="slate"] .md-content {
+  background: rgba(33, 37, 43, 0.5);
+}

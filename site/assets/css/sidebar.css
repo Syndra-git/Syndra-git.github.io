@@ -1,0 +1,29 @@
+/* Left sidebar - indented levels with hover slide-in */
+
+.md-sidebar--primary .md-nav__item > .md-nav__link { padding-left: 0.8rem; }
+.md-sidebar--primary .md-nav__item > ul > .md-nav__item > .md-nav__link { padding-left: 1.6rem; }
+.md-sidebar--primary .md-nav__item > ul > .md-nav__item > ul > .md-nav__item > .md-nav__link { padding-left: 2.4rem; }
+
+.md-sidebar--primary .md-nav__link {
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.md-sidebar--primary .md-nav__link:hover {
+  background: rgba(52, 152, 219, 0.08);
+  padding-left: 1rem;
+  transform: translateX(4px);
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary,
+  .md-sidebar--secondary {
+    min-width: 240px;
+    max-width: 480px;
+  }
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link:hover {
+  background: rgba(97, 175, 239, 0.08);
+}
