@@ -1,3 +1,3 @@
 # as_foreigner
 
-这里记录作为异乡人的见闻与感悟。
+“ 此 foreigner 非彼 foreigner "

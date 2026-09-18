@@ -1,3 +1,3 @@
 # as_reader
 
-这里记录阅读笔记与读书心得。
+hoping to be a reader <Hahahaha...>
