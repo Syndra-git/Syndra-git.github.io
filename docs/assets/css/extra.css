@@ -70,6 +70,15 @@ body {
   justify-content: center;
 }
 
+/* Hide TOC content but keep sidebar space */
+.md-sidebar--secondary .md-nav__list {
+  display: none;
+}
+
+.md-sidebar--secondary .md-nav__title {
+  display: none;
+}
+
 /* GitHub heatmap */
 .github-heatmap {
   text-align: center;

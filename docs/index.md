@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Welcome to my blog
 
 ## 关于作者
