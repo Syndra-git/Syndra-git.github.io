@@ -53,6 +53,9 @@ nav:
     - 前言: as_student/preface.md
     - 计算机组成原理:
       - as_student/computer_organization/index.md
+    - 信息安全数学基础:
+      - as_student/datasecurity_mathematics/index.md
+      - 第一至四章: as_student/datasecurity_mathematics/Chapter 1-4.md
   - as_staff:
     - as_staff/index.md
   - as_reader:
