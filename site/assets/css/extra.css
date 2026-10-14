@@ -27,19 +27,56 @@ body {
     var(--page-bg-grid-bold-size) var(--page-bg-grid-bold-size);
 }
 
+/* Top navigation tabs - larger font */
+.md-tabs__link {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Left sidebar navigation - larger font */
+.md-nav__link {
+  font-size: 0.8rem;
+}
+
+.md-nav__title {
+  font-size: 0.9rem;
+}
+
 .md-main {
   background: transparent;
 }
 
 .md-grid {
-  max-width: max(85%, 65rem);
+  max-width: max(88%, 70rem);
+  margin: 0 auto;
 }
 
 .md-content {
   background: rgba(255, 255, 255, 0.85);
   border-radius: 12px;
   padding: 1rem 1.5rem;
-  margin: 0.5rem;
+  margin: 0.5rem auto;
+}
+
+/* Center content when TOC is hidden */
+.md-content__inner {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Adjust layout when right sidebar (TOC) is hidden */
+.md-main__inner {
+  display: flex;
+  justify-content: center;
+}
+
+/* Hide TOC content but keep sidebar space */
+.md-sidebar--secondary .md-nav__list {
+  display: none;
+}
+
+.md-sidebar--secondary .md-nav__title {
+  display: none;
 }
 
 /* GitHub heatmap */

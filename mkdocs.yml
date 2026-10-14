@@ -26,10 +26,18 @@ theme:
     - search.suggest
     - content.code.copy
 
+plugins:
+  - search
+  - callouts
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.arithmatex:
       generic: true
   - admonition
@@ -44,6 +52,7 @@ extra_css:
 extra_javascript:
   - assets/js/mathjax-config.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
   - assets/js/read-metrics.js
 
 nav:

@@ -1,0 +1,2465 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://newtars.top/as_student/datasecurity_mathematics/Chapter%201-4/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../../as_staff/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第一至四章 - NewTars-Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/css/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/toc.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/sidebar.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/read-metrics.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-14" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="NewTars-Blog" class="md-header__button md-logo" aria-label="NewTars-Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NewTars-Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第一至四章
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  as_student
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../as_staff/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  as_staff
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../as_reader/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  as_reader
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../as_foreigner/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  as_foreigner
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../casual_notes/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  casual_notes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="NewTars-Blog" class="md-nav__button md-logo" aria-label="NewTars-Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    NewTars-Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    as_student
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    as_student
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../computer_organization/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机组成原理
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机组成原理
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息安全数学基础
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    信息安全数学基础
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一至四章
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一至四章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课程总览与学习路线
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../as_staff/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    as_staff
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    as_staff
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../as_reader/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    as_reader
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    as_reader
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../as_foreigner/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    as_foreigner
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    as_foreigner
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../casual_notes/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    casual_notes
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    casual_notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../casual_notes/2026-09-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一次尝试小记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../casual_notes/2026-09-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MLE/MAP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课程总览与学习路线
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="-14">信息安全数学基础 -- 第1至4章 课程梳理</h1>
+<div class="admonition info">
+<p class="admonition-title">课程信息</p>
+<p><strong>教材</strong>: 信息安全数学基础（第2版） -- 陈恭亮
+<strong>Update</strong>:2026-10-14</p>
+</div>
+<hr />
+<h2 id="_1">课程总览与学习路线</h2>
+<pre class="mermaid"><code>graph LR
+    A["第1章 整数的可除性"] --&gt; B["第2章 同余"]
+    B --&gt; C["第3章 同余式"]
+    C --&gt; D["第4章 二次同余式与平方剩余"]</code></pre>
+<table>
+<thead>
+<tr>
+<th>章节</th>
+<th>核心主题</th>
+<th>难度</th>
+<th>前置知识</th>
+<th>预计学时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第1章</td>
+<td>整除性、素数、GCD、Euclidean算法</td>
+<td>基础</td>
+<td>高中数学</td>
+<td>8h</td>
+</tr>
+<tr>
+<td>第2章</td>
+<td>同余理论、剩余类、Euler定理</td>
+<td>中等</td>
+<td>第1章</td>
+<td>10h</td>
+</tr>
+<tr>
+<td>第3章</td>
+<td>同余方程、CRT、Hensel引理</td>
+<td>中高</td>
+<td>第1-2章</td>
+<td>10h</td>
+</tr>
+<tr>
+<td>第4章</td>
+<td>二次剩余、Legendre符号、二次互反律</td>
+<td>较高</td>
+<td>第1-3章</td>
+<td>12h</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">学习建议</p>
+<ol>
+<li><strong>第1章</strong>是后续所有章节的基石，务必熟练掌握辗转相除法和扩展Euclidean算法</li>
+<li><strong>第2章</strong>引入同余语言，是整个数论的核心工具，需深入理解剩余类的概念</li>
+<li><strong>第3章</strong>将同余转化为方程求解，CRT和Hensel引理是密码学中的重要工具</li>
+<li><strong>第4章</strong>综合前三章知识，二次剩余理论在公钥密码（如Rabin体制）中有直接应用</li>
+</ol>
+</div>
+<hr />
+<h1 id="1">第1章 整数的可除性</h1>
+<h2 id="11-euclidean">1.1 整除与Euclidean除法</h2>
+<h3 id="111">1.1.1 整除的基本概念</h3>
+<div class="admonition definition">
+<p class="admonition-title">整除</p>
+<p>设 <span class="arithmatex">\(a, b\)</span> 是整数，<span class="arithmatex">\(b \neq 0\)</span>。如果存在整数 <span class="arithmatex">\(q\)</span> 使得 <span class="arithmatex">\(a = bq\)</span>，则称 <span class="arithmatex">\(b\)</span> <strong>整除</strong> <span class="arithmatex">\(a\)</span>，记为 <span class="arithmatex">\(b \mid a\)</span>。
+此时称 <span class="arithmatex">\(b\)</span> 为 <span class="arithmatex">\(a\)</span> 的<strong>因数</strong>（或<strong>除数</strong>），<span class="arithmatex">\(a\)</span> 为 <span class="arithmatex">\(b\)</span> 的<strong>倍数</strong>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">整除的基本性质</p>
+<ol>
+<li>若 <span class="arithmatex">\(b \mid a\)</span>，则 <span class="arithmatex">\(b \mid (-a)\)</span>，且 <span class="arithmatex">\(|b| \leq |a|\)</span>（当 <span class="arithmatex">\(a \neq 0\)</span> 时）</li>
+<li>若 <span class="arithmatex">\(b \mid a\)</span> 且 <span class="arithmatex">\(c \mid b\)</span>，则 <span class="arithmatex">\(c \mid a\)</span>（传递性）</li>
+<li>若 <span class="arithmatex">\(c \mid a\)</span> 且 <span class="arithmatex">\(c \mid b\)</span>，则 <span class="arithmatex">\(c \mid (a \pm b)\)</span></li>
+<li>若 <span class="arithmatex">\(c \mid a\)</span>，则对任意整数 <span class="arithmatex">\(b\)</span>，<span class="arithmatex">\(c \mid ab\)</span></li>
+<li><span class="arithmatex">\(1 \mid a\)</span>，<span class="arithmatex">\(a \mid a\)</span>，<span class="arithmatex">\(a \mid 0\)</span></li>
+</ol>
+</div>
+<h3 id="112-euclidean">1.1.2 Euclidean除法（带余除法）</h3>
+<div class="admonition theorem">
+<p class="admonition-title">Euclidean除法定理</p>
+<p>设 <span class="arithmatex">\(a, b\)</span> 是整数，<span class="arithmatex">\(b &gt; 0\)</span>，则存在唯一的整数 <span class="arithmatex">\(q\)</span>（商）和 <span class="arithmatex">\(r\)</span>（余数）使得：
+$<span class="arithmatex">\(a = bq + r, \quad 0 \leq r &lt; b\)</span>$</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">例1.1.1</p>
+<p><span class="arithmatex">\(a = 99, b = 5\)</span>: <span class="arithmatex">\(99 = 5 \times 19 + 4\)</span>，商 <span class="arithmatex">\(q = 19\)</span>，余数 <span class="arithmatex">\(r = 4\)</span>。</p>
+</div>
+<div class="admonition definition">
+<p class="admonition-title">最大公因数</p>
+<p>设 <span class="arithmatex">\(a, b\)</span> 是不全为零的整数。<span class="arithmatex">\(a, b\)</span> 的<strong>最大公因数</strong>（GCD）是能整除 <span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span> 的最大正整数，记为 <span class="arithmatex">\((a, b)\)</span> 或 <span class="arithmatex">\(\gcd(a, b)\)</span>。</p>
+</div>
+<hr />
+<h2 id="12-eratosthenes">1.2 素数与Eratosthenes筛法</h2>
+<h3 id="121">1.2.1 素数的基本概念</h3>
+<div class="admonition definition">
+<p class="admonition-title">素数与合数</p>
+<p>设 <span class="arithmatex">\(p &gt; 1\)</span> 是整数。如果 <span class="arithmatex">\(p\)</span> 的正因数只有 <span class="arithmatex">\(1\)</span> 和 <span class="arithmatex">\(p\)</span>，则称 <span class="arithmatex">\(p\)</span> 为<strong>素数</strong>（或<strong>质数</strong>）。
+如果 <span class="arithmatex">\(p &gt; 1\)</span> 且不是素数，则称 <span class="arithmatex">\(p\)</span> 为<strong>合数</strong>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">素数的基本性质</p>
+<ul>
+<li><span class="arithmatex">\(2\)</span> 是唯一的偶素数</li>
+<li>素数有无穷多个（Euclid证明）</li>
+<li>若 <span class="arithmatex">\(p \mid ab\)</span>，则 <span class="arithmatex">\(p \mid a\)</span> 或 <span class="arithmatex">\(p \mid b\)</span>（Euclid引理）</li>
+</ul>
+</div>
+<h3 id="122-eratosthenes">1.2.2 Eratosthenes筛法</h3>
+<div class="admonition algorithm">
+<p class="admonition-title">Eratosthenes筛法</p>
+<p><strong>目标</strong>: 找出 <span class="arithmatex">\(\leq N\)</span> 的所有素数
+<strong>步骤</strong>:</p>
+<ol>
+<li>写出 <span class="arithmatex">\(2, 3, 4, \dots, N\)</span></li>
+<li>找到最小的未被标记的数 <span class="arithmatex">\(p\)</span>，它是素数</li>
+<li>标记 <span class="arithmatex">\(p^2, p^2 + p, p^2 + 2p, \dots\)</span> 为合数</li>
+<li>重复步骤2-3，直到 <span class="arithmatex">\(p &gt; \sqrt{N}\)</span></li>
+<li>所有未被标记的数即为素数</li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">应用</p>
+<p>Eratosthenes筛法适用于找出较小范围内的所有素数，时间复杂度约为 <span class="arithmatex">\(O(N \log \log N)\)</span>。</p>
+</div>
+<hr />
+<h2 id="13-euclideaneuclidean">1.3 Euclidean算法与扩展Euclidean算法</h2>
+<h3 id="131-euclidean">1.3.1 辗转相除法（Euclidean算法）</h3>
+<div class="admonition theorem">
+<p class="admonition-title">Euclidean算法</p>
+<p>设 <span class="arithmatex">\(a, b\)</span> 是正整数，<span class="arithmatex">\(a &gt; b\)</span>。通过连续除法：
+$<span class="arithmatex">\(\begin{aligned}
+a &amp;= bq_1 + r_1, \quad 0 &lt; r_1 &lt; b \\
+b &amp;= r_1 q_2 + r_2, \quad 0 &lt; r_2 &lt; r_1 \\
+r_1 &amp;= r_2 q_3 + r_3, \quad 0 &lt; r_3 &lt; r_2 \\
+&amp;\;\;\vdots \\
+r_{n-2} &amp;= r_{n-1} q_n + r_n, \quad 0 &lt; r_n &lt; r_{n-1} \\
+r_{n-1} &amp;= r_n q_{n+1} + 0
+\end{aligned}\)</span>$
+则 <span class="arithmatex">\((a, b) = r_n\)</span>（最后一个非零余数）。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">关键性质</p>
+<p>在辗转相除过程中：<span class="arithmatex">\((a, b) = (b, r_1) = (r_1, r_2) = \cdots = (r_{n-1}, r_n) = r_n\)</span></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">例: 求 <span class="arithmatex">\((288, 123)\)</span></p>
+<p>$<span class="arithmatex">\(\begin{aligned}
+288 &amp;= 123 \times 2 + 42 \\
+123 &amp;= 42 \times 2 + 39 \\
+42 &amp;= 39 \times 1 + 3 \\
+39 &amp;= 3 \times 13 + 0
+\end{aligned}\)</span>$
+所以 <span class="arithmatex">\((288, 123) = 3\)</span>。</p>
+</div>
+<h3 id="132-euclideanbezout">1.3.2 扩展Euclidean算法（Bézout等式）</h3>
+<div class="admonition theorem">
+<p class="admonition-title">Bézout定理</p>
+<p>设 <span class="arithmatex">\(a, b\)</span> 是不全为零的整数，<span class="arithmatex">\(d = (a, b)\)</span>。则存在整数 <span class="arithmatex">\(s, t\)</span> 使得：
+$<span class="arithmatex">\(sa + tb = d\)</span>$</p>
+</div>
+<div class="admonition algorithm">
+<p class="admonition-title">扩展Euclidean算法</p>
+<p>在Euclidean算法的基础上<strong>反向代入</strong>，可以求出 <span class="arithmatex">\(s, t\)</span>：</p>
+<ol>
+<li>先做Euclidean算法得到余数序列 <span class="arithmatex">\(r_0 = a, r_1 = b, r_2, \dots, r_n = d\)</span></li>
+<li>同时维护序列 <span class="arithmatex">\(s_0 = 1, s_1 = 0\)</span> 和 <span class="arithmatex">\(t_0 = 0, t_1 = 1\)</span></li>
+<li>递推：<span class="arithmatex">\(s_i = s_{i-2} - q_i s_{i-1}\)</span>，<span class="arithmatex">\(t_i = t_{i-2} - q_i t_{i-1}\)</span></li>
+<li>最终 <span class="arithmatex">\(s_n \cdot a + t_n \cdot b = d\)</span></li>
+</ol>
+</div>
+<div class="admonition example">
+<p class="admonition-title">例: 求 <span class="arithmatex">\(s, t\)</span> 使得 <span class="arithmatex">\(288s + 123t = 3\)</span></p>
+<p>反向代入：
+$<span class="arithmatex">\(\begin{aligned}
+3 &amp;= 42 - 39 \times 1 \\
+&amp;= 42 - (123 - 42 \times 2) = 42 \times 3 - 123 \\
+&amp;= (288 - 123 \times 2) \times 3 - 123 \\
+&amp;= 288 \times 3 - 123 \times 7
+\end{aligned}\)</span>$
+所以 <span class="arithmatex">\(s = 3, t = -7\)</span>，验证：<span class="arithmatex">\(288 \times 3 + 123 \times (-7) = 864 - 861 = 3\)</span>。</p>
+</div>
+<hr />
+<h2 id="14">1.4 最小公倍数</h2>
+<div class="admonition definition">
+<p class="admonition-title">最小公倍数</p>
+<p>设 <span class="arithmatex">\(a, b\)</span> 是非零整数。<span class="arithmatex">\(a, b\)</span> 的<strong>最小公倍数</strong>（LCM）是能被 <span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span> 整除的最小正整数，记为 <span class="arithmatex">\([a, b]\)</span> 或 <span class="arithmatex">\(\text{lcm}(a, b)\)</span>。</p>
+</div>
+<div class="admonition theorem">
+<p class="admonition-title">GCD与LCM的关系</p>
+<div class="arithmatex">\[[a, b] = \frac{|a \cdot b|}{(a, b)}\]</div>
+</div>
+<div class="admonition corollary">
+<p class="admonition-title">若 <span class="arithmatex">\((a, b) = 1\)</span>，则 <span class="arithmatex">\([a, b] = |ab|\)</span>。</p>
+</div>
+<hr />
+<h2 id="15">1.5 整数分解与算术基本定理</h2>
+<h3 id="151">1.5.1 整数的标准分解式</h3>
+<div class="admonition theorem">
+<p class="admonition-title">算术基本定理（整数唯一分解定理）</p>
+<p>任何大于1的整数 <span class="arithmatex">\(n\)</span> 都可以唯一地分解为素数的乘积：
+$<span class="arithmatex">\(n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}\)</span>$
+其中 <span class="arithmatex">\(p_1 &lt; p_2 &lt; \cdots &lt; p_k\)</span> 是素数，<span class="arithmatex">\(\alpha_i &gt; 0\)</span>，且这种分解方式<strong>唯一</strong>（不计排列顺序）。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">推论</p>
+<ol>
+<li>
+<p>若 <span class="arithmatex">\(n = p_1^{\alpha_1} \cdots p_k^{\alpha_k}\)</span>，则 <span class="arithmatex">\(n\)</span> 的正因数个数为：
+$<span class="arithmatex">\(\tau(n) = (\alpha_1 + 1)(\alpha_2 + 1) \cdots (\alpha_k + 1)\)</span>$</p>
+</li>
+<li>
+<p>若 <span class="arithmatex">\(a = p_1^{\alpha_1} \cdots p_k^{\alpha_k}\)</span>，<span class="arithmatex">\(b = p_1^{\beta_1} \cdots p_k^{\beta_k}\)</span>（允许某些指数为0），则：
+$<span class="arithmatex">\((a, b) = p_1^{\min(\alpha_1, \beta_1)} \cdots p_k^{\min(\alpha_k, \beta_k)}\)</span>$
+$<span class="arithmatex">\([a, b] = p_1^{\max(\alpha_1, \beta_1)} \cdots p_k^{\max(\alpha_k, \beta_k)}\)</span>$</p>
+</li>
+</ol>
+</div>
+<h3 id="152">1.5.2 素数分布</h3>
+<div class="admonition theorem">
+<p class="admonition-title">素数定理</p>
+<p>设 <span class="arithmatex">\(\pi(x)\)</span> 表示不超过 <span class="arithmatex">\(x\)</span> 的素数个数，则：
+$<span class="arithmatex">\(\pi(x) \sim \frac{x}{\ln x} \quad (x \to \infty)\)</span>$</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">素数定理的含义</p>
+<p>当 <span class="arithmatex">\(x\)</span> 充分大时，在 <span class="arithmatex">\(1\)</span> 到 <span class="arithmatex">\(x\)</span> 之间随机选一个整数为素数的概率约为 <span class="arithmatex">\(\frac{1}{\ln x}\)</span>。</p>
+</div>
+<hr />
+<h2 id="1_1">第1章 习题精选</h2>
+<div class="admonition question">
+<p class="admonition-title">基础练习</p>
+<ol>
+<li>求 <span class="arithmatex">\((288, 123)\)</span> 以及 <span class="arithmatex">\(s, t\)</span> 使得 <span class="arithmatex">\(288s + 123t = (288, 123)\)</span></li>
+<li>证明：若 <span class="arithmatex">\((a, b) = 1\)</span> 且 <span class="arithmatex">\(a \mid bc\)</span>，则 <span class="arithmatex">\(a \mid c\)</span></li>
+<li>证明：对任意正整数 <span class="arithmatex">\(n\)</span>，<span class="arithmatex">\(n^2 + 2n + 1\)</span> 不是素数（<span class="arithmatex">\(n &gt; 0\)</span> 时）</li>
+<li>求 <span class="arithmatex">\([12, 18, 30]\)</span></li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">提高题</p>
+<ol>
+<li>证明：若 <span class="arithmatex">\(a, b\)</span> 是正整数且 <span class="arithmatex">\((a, b) = 1\)</span>，则 <span class="arithmatex">\((a+b, a-b) = 1\)</span> 或 <span class="arithmatex">\(2\)</span></li>
+<li>设 <span class="arithmatex">\(n &gt; 1\)</span>，证明 <span class="arithmatex">\(n\)</span> 的最小正素因数 <span class="arithmatex">\(\leq \sqrt{n}\)</span></li>
+<li>证明 <span class="arithmatex">\(\sqrt{2}\)</span> 是无理数</li>
+</ol>
+</div>
+<hr />
+<h2 id="1_2">第1章 知识总结</h2>
+<div class="admonition abstract">
+<p class="admonition-title">核心概念表</p>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>符号</th>
+<th>定义要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整除</td>
+<td><span class="arithmatex">\(b \mid a\)</span></td>
+<td><span class="arithmatex">\(\exists q: a = bq\)</span></td>
+</tr>
+<tr>
+<td>最大公因数</td>
+<td><span class="arithmatex">\((a,b)\)</span></td>
+<td>能同时整除 <span class="arithmatex">\(a, b\)</span> 的最大正整数</td>
+</tr>
+<tr>
+<td>最小公倍数</td>
+<td><span class="arithmatex">\([a,b]\)</span></td>
+<td>能被 <span class="arithmatex">\(a, b\)</span> 同时整除的最小正整数</td>
+</tr>
+<tr>
+<td>素数</td>
+<td><span class="arithmatex">\(p\)</span></td>
+<td>正因数只有 <span class="arithmatex">\(1\)</span> 和 <span class="arithmatex">\(p\)</span></td>
+</tr>
+<tr>
+<td>Bézout等式</td>
+<td><span class="arithmatex">\(sa+tb=d\)</span></td>
+<td><span class="arithmatex">\(d=(a,b)\)</span> 的线性表示</td>
+</tr>
+<tr>
+<td>算术基本定理</td>
+<td><span class="arithmatex">\(n=p_1^{\alpha_1}\cdots p_k^{\alpha_k}\)</span></td>
+<td>唯一素因数分解</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition success">
+<p class="admonition-title">自检清单</p>
+<ul>
+<li>[ ] 能否熟练执行Euclidean算法求GCD？</li>
+<li>[ ] 能否用扩展Euclidean算法求Bézout系数？</li>
+<li>[ ] 能否用算术基本定理计算GCD和LCM？</li>
+<li>[ ] 是否理解素数有无穷多个的证明？</li>
+<li>[ ] 是否理解Eratosthenes筛法的原理？</li>
+</ul>
+</div>
+<hr />
+<h1 id="2">第2章 同余</h1>
+<h2 id="21">2.1 同余的基本概念与性质</h2>
+<h3 id="211">2.1.1 同余的定义</h3>
+<div class="admonition definition">
+<p class="admonition-title">同余</p>
+<p>设 <span class="arithmatex">\(m &gt; 0\)</span> 是整数（称为<strong>模</strong>），<span class="arithmatex">\(a, b\)</span> 是整数。如果 <span class="arithmatex">\(m \mid (a - b)\)</span>，则称 <span class="arithmatex">\(a\)</span> 与 <span class="arithmatex">\(b\)</span> <strong>模 <span class="arithmatex">\(m\)</span> 同余</strong>，记为：
+$<span class="arithmatex">\(a \equiv b \pmod{m}\)</span>$
+否则记为 <span class="arithmatex">\(a \not\equiv b \pmod{m}\)</span>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">等价理解</p>
+<p><span class="arithmatex">\(a \equiv b \pmod{m}\)</span> 等价于以下任一说法：</p>
+<ul>
+<li><span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span> 除以 <span class="arithmatex">\(m\)</span> 的余数相同</li>
+<li><span class="arithmatex">\(a = b + km\)</span>，<span class="arithmatex">\(k \in \mathbb{Z}\)</span></li>
+<li><span class="arithmatex">\(a, b\)</span> 属于同一个模 <span class="arithmatex">\(m\)</span> 剩余类</li>
+</ul>
+</div>
+<h3 id="212">2.1.2 同余的基本性质</h3>
+<div class="admonition theorem">
+<p class="admonition-title">同余的性质</p>
+<ol>
+<li><strong>自反性</strong>: <span class="arithmatex">\(a \equiv a \pmod{m}\)</span></li>
+<li><strong>对称性</strong>: <span class="arithmatex">\(a \equiv b \pmod{m} \implies b \equiv a \pmod{m}\)</span></li>
+<li><strong>传递性</strong>: <span class="arithmatex">\(a \equiv b, b \equiv c \pmod{m} \implies a \equiv c \pmod{m}\)</span></li>
+<li><strong>加法</strong>: <span class="arithmatex">\(a \equiv b, c \equiv d \pmod{m} \implies a + c \equiv b + d \pmod{m}\)</span></li>
+<li><strong>乘法</strong>: <span class="arithmatex">\(a \equiv b, c \equiv d \pmod{m} \implies ac \equiv bd \pmod{m}\)</span></li>
+<li><strong>幂运算</strong>: <span class="arithmatex">\(a \equiv b \pmod{m} \implies a^n \equiv b^n \pmod{m}\)</span>（<span class="arithmatex">\(n \geq 0\)</span>）</li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">常见误区</p>
+<ul>
+<li><strong>不能随意约分</strong>: <span class="arithmatex">\(ac \equiv bc \pmod{m}\)</span> <strong>不能</strong>直接推出 <span class="arithmatex">\(a \equiv b \pmod{m}\)</span></li>
+<li>正确做法: <span class="arithmatex">\(ac \equiv bc \pmod{m} \implies a \equiv b \pmod{m/(c,m)}\)</span></li>
+<li>特别当 <span class="arithmatex">\((c, m) = 1\)</span> 时，才能约去 <span class="arithmatex">\(c\)</span></li>
+</ul>
+</div>
+<hr />
+<h2 id="22">2.2 剩余类</h2>
+<h3 id="221">2.2.1 剩余类的定义</h3>
+<div class="admonition definition">
+<p class="admonition-title">剩余类</p>
+<p>对于模 <span class="arithmatex">\(m\)</span>，将所有与 <span class="arithmatex">\(a\)</span> 模 <span class="arithmatex">\(m\)</span> 同余的整数组成一个集合：
+$<span class="arithmatex">\(\overline{a} = \{a + km \mid k \in \mathbb{Z}\}\)</span>$
+称为模 <span class="arithmatex">\(m\)</span> 的一个<strong>剩余类</strong>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">剩余类的性质</p>
+<ul>
+<li>模 <span class="arithmatex">\(m\)</span> 恰好有 <span class="arithmatex">\(m\)</span> 个剩余类</li>
+<li>每个整数恰好属于一个剩余类</li>
+<li>两个剩余类要么完全相同，要么不相交</li>
+</ul>
+</div>
+<h3 id="222">2.2.2 完全剩余系</h3>
+<div class="admonition definition">
+<p class="admonition-title">完全剩余系</p>
+<p>从模 <span class="arithmatex">\(m\)</span> 的每个剩余类中各取一个代表，组成的 <span class="arithmatex">\(m\)</span> 个整数 <span class="arithmatex">\(a_1, a_2, \dots, a_m\)</span> 称为模 <span class="arithmatex">\(m\)</span> 的一个<strong>完全剩余系</strong>。</p>
+<p>最常用的完全剩余系：<span class="arithmatex">\(\{0, 1, 2, \dots, m-1\}\)</span>（<strong>最小非负剩余系</strong>）
+或 <span class="arithmatex">\(\{-\lfloor m/2 \rfloor, \dots, 0, \dots, \lceil m/2 \rceil - 1\}\)</span>（<strong>最小绝对剩余系</strong>）</p>
+</div>
+<div class="admonition theorem">
+<p class="admonition-title">完全剩余系的判定</p>
+<p><span class="arithmatex">\(a_1, a_2, \dots, a_m\)</span> 构成模 <span class="arithmatex">\(m\)</span> 的完全剩余系 <span class="arithmatex">\(\iff\)</span> 它们模 <span class="arithmatex">\(m\)</span> 两两不同余。</p>
+</div>
+<h3 id="223">2.2.3 缩系（简化剩余系）</h3>
+<div class="admonition definition">
+<p class="admonition-title">简化剩余系（缩系）</p>
+<p>从模 <span class="arithmatex">\(m\)</span> 的所有与 <span class="arithmatex">\(m\)</span> 互素的剩余类中各取一个代表，组成的整数称为模 <span class="arithmatex">\(m\)</span> 的<strong>简化剩余系</strong>（或<strong>缩系</strong>）。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">缩系的性质</p>
+<ul>
+<li>缩系中元素的个数为 <span class="arithmatex">\(\varphi(m)\)</span>（Euler函数）</li>
+<li>缩系中每个元素与 <span class="arithmatex">\(m\)</span> 互素</li>
+<li>缩系中元素两两模 <span class="arithmatex">\(m\)</span> 不同余</li>
+</ul>
+</div>
+<hr />
+<h2 id="23-euler">2.3 Euler函数</h2>
+<h3 id="231-euler">2.3.1 Euler函数的定义与计算</h3>
+<div class="admonition definition">
+<p class="admonition-title">Euler函数</p>
+<p>对正整数 <span class="arithmatex">\(m &gt; 1\)</span>，<span class="arithmatex">\(\varphi(m)\)</span> 表示 <span class="arithmatex">\(1, 2, \dots, m\)</span> 中与 <span class="arithmatex">\(m\)</span> 互素的整数的个数。</p>
+</div>
+<div class="admonition theorem">
+<p class="admonition-title">Euler函数的计算公式</p>
+<p>若 <span class="arithmatex">\(m = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}\)</span>，则：
+$<span class="arithmatex">\(\varphi(m) = m \prod_{i=1}^{k} \left(1 - \frac{1}{p_i}\right) = m \left(1 - \frac{1}{p_1}\right)\left(1 - \frac{1}{p_2}\right) \cdots \left(1 - \frac{1}{p_k}\right)\)</span>$</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">计算示例</p>
+<ul>
+<li><span class="arithmatex">\(\varphi(7) = 6\)</span>（7是素数）</li>
+<li><span class="arithmatex">\(\varphi(12) = 12 \times (1 - 1/2)(1 - 1/3) = 12 \times \frac{1}{2} \times \frac{2}{3} = 4\)</span></li>
+<li><span class="arithmatex">\(\varphi(p) = p - 1\)</span>（<span class="arithmatex">\(p\)</span> 为素数）</li>
+<li><span class="arithmatex">\(\varphi(p^\alpha) = p^\alpha - p^{\alpha-1} = p^{\alpha-1}(p-1)\)</span></li>
+</ul>
+</div>
+<div class="admonition theorem">
+<p class="admonition-title">Euler函数的性质</p>
+<ol>
+<li>若 <span class="arithmatex">\((m_1, m_2) = 1\)</span>，则 <span class="arithmatex">\(\varphi(m_1 m_2) = \varphi(m_1) \varphi(m_2)\)</span>（积性函数）</li>
+<li>对素数 <span class="arithmatex">\(p\)</span>：<span class="arithmatex">\(\varphi(p) = p - 1\)</span></li>
+<li><span class="arithmatex">\(\sum_{d \mid n} \varphi(d) = n\)</span></li>
+</ol>
+</div>
+<hr />
+<h2 id="24-eulerfermatwilson">2.4 Euler定理、Fermat小定理与Wilson定理</h2>
+<h3 id="241-euler">2.4.1 Euler定理</h3>
+<div class="admonition theorem">
+<p class="admonition-title">Euler定理</p>
+<p>设 <span class="arithmatex">\(m &gt; 1\)</span> 是整数，<span class="arithmatex">\((a, m) = 1\)</span>，则：
+$<span class="arithmatex">\(a^{\varphi(m)} \equiv 1 \pmod{m}\)</span>$</p>
+</div>
+<div class="admonition proof">
+<p class="admonition-title">证明</p>
+<p>设 <span class="arithmatex">\(a_1, a_2, \dots, a_{\varphi(m)}\)</span> 是模 <span class="arithmatex">\(m\)</span> 的一个缩系。
+因为 <span class="arithmatex">\((a, m) = 1\)</span>，所以 <span class="arithmatex">\(aa_1, aa_2, \dots, aa_{\varphi(m)}\)</span> 也构成模 <span class="arithmatex">\(m\)</span> 的一个缩系。
+因此：
+$<span class="arithmatex">\(aa_1 \cdot aa_2 \cdots aa_{\varphi(m)} \equiv a_1 \cdot a_2 \cdots a_{\varphi(m)} \pmod{m}\)</span>$
+即 <span class="arithmatex">\(a^{\varphi(m)} \cdot (a_1 a_2 \cdots a_{\varphi(m)}) \equiv a_1 a_2 \cdots a_{\varphi(m)} \pmod{m}\)</span>
+因为 <span class="arithmatex">\((a_i, m) = 1\)</span>，所以 <span class="arithmatex">\((a_1 a_2 \cdots a_{\varphi(m)}, m) = 1\)</span>，可以约去，得到：
+$<span class="arithmatex">\(a^{\varphi(m)} \equiv 1 \pmod{m}\)</span>$
+证毕。</p>
+</div>
+<h3 id="242-fermat">2.4.2 Fermat小定理</h3>
+<div class="admonition theorem">
+<p class="admonition-title">Fermat小定理</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是素数，<span class="arithmatex">\(p \nmid a\)</span>，则：
+$<span class="arithmatex">\(a^{p-1} \equiv 1 \pmod{p}\)</span>$</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">与Euler定理的关系</p>
+<p>Fermat小定理是Euler定理当 <span class="arithmatex">\(m = p\)</span> 时的特例，因为 <span class="arithmatex">\(\varphi(p) = p - 1\)</span>。</p>
+</div>
+<div class="admonition corollary">
+<p class="admonition-title">对任意整数 <span class="arithmatex">\(a\)</span> 和素数 <span class="arithmatex">\(p\)</span>：</p>
+<div class="arithmatex">\[a^p \equiv a \pmod{p}\]</div>
+</div>
+<h3 id="243-wilson">2.4.3 Wilson定理</h3>
+<div class="admonition theorem">
+<p class="admonition-title">Wilson定理</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是素数，则：
+$<span class="arithmatex">\((p-1)! \equiv -1 \pmod{p}\)</span>$</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Wilson定理的意义</p>
+<ul>
+<li>Wilson定理给出了素数的<strong>充要条件</strong>：<span class="arithmatex">\(p\)</span> 是素数 <span class="arithmatex">\(\iff (p-1)! \equiv -1 \pmod{p}\)</span></li>
+<li>但计算量大，不适合实际素性检测</li>
+<li>主要用于理论推导</li>
+</ul>
+</div>
+<hr />
+<h2 id="25">2.5 模运算的应用</h2>
+<h3 id="251">2.5.1 快速幂运算（模重复平方法）</h3>
+<div class="admonition algorithm">
+<p class="admonition-title">快速幂算法</p>
+<p>计算 <span class="arithmatex">\(a^n \bmod m\)</span>：</p>
+<ol>
+<li>将 <span class="arithmatex">\(n\)</span> 写成二进制：<span class="arithmatex">\(n = (b_k b_{k-1} \dots b_1 b_0)_2\)</span></li>
+<li>初始化 <span class="arithmatex">\(result = 1\)</span></li>
+<li>从高位到低位遍历 <span class="arithmatex">\(b_i\)</span>：</li>
+<li><span class="arithmatex">\(result = result^2 \bmod m\)</span></li>
+<li>如果 <span class="arithmatex">\(b_i = 1\)</span>，<span class="arithmatex">\(result = result \times a \bmod m\)</span></li>
+<li>返回 <span class="arithmatex">\(result\)</span></li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="admonition-title">复杂度</p>
+<p>时间复杂度：<span class="arithmatex">\(O(\log n)\)</span> 次模乘运算</p>
+</div>
+<hr />
+<h2 id="2_1">第2章 习题精选</h2>
+<div class="admonition question">
+<p class="admonition-title">基础练习</p>
+<ol>
+<li>计算 <span class="arithmatex">\(\varphi(100)\)</span>, <span class="arithmatex">\(\varphi(1001)\)</span>, <span class="arithmatex">\(\varphi(10000)\)</span></li>
+<li>求 <span class="arithmatex">\(2^{100} \bmod 7\)</span></li>
+<li>证明：若 <span class="arithmatex">\((a, m) = 1\)</span>，则 <span class="arithmatex">\(a^{\varphi(m)} \equiv 1 \pmod{m}\)</span></li>
+<li>证明 <span class="arithmatex">\(10 \mid n^5 - n\)</span> 对所有正整数 <span class="arithmatex">\(n\)</span> 成立</li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">提高题</p>
+<ol>
+<li>证明：对任意整数 <span class="arithmatex">\(a\)</span>，<span class="arithmatex">\(a^2 \equiv 0\)</span> 或 <span class="arithmatex">\(1 \pmod{3}\)</span></li>
+<li>设 <span class="arithmatex">\(p\)</span> 是素数，证明 <span class="arithmatex">\((p-2)! \equiv 1 \pmod{p}\)</span></li>
+<li>证明：若 <span class="arithmatex">\(p\)</span> 和 <span class="arithmatex">\(p+2\)</span> 都是素数（孪生素数），则 <span class="arithmatex">\(p &gt; 3\)</span> 时 <span class="arithmatex">\(24 \mid p(p+2) - 1\)</span>... 不对，应为 <span class="arithmatex">\(p(p+2)+1\)</span> 被24整除... 实际上应该是 <span class="arithmatex">\(4 \mid (p+1)\)</span></li>
+</ol>
+</div>
+<hr />
+<h2 id="2_2">第2章 知识总结</h2>
+<div class="admonition abstract">
+<p class="admonition-title">核心概念表</p>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>符号/公式</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同余</td>
+<td><span class="arithmatex">\(a \equiv b \pmod{m}\)</span></td>
+<td><span class="arithmatex">\(m \mid (a-b)\)</span></td>
+</tr>
+<tr>
+<td>剩余类</td>
+<td><span class="arithmatex">\(\overline{a}\)</span></td>
+<td>模 <span class="arithmatex">\(m\)</span> 同余的整数集合</td>
+</tr>
+<tr>
+<td>完全剩余系</td>
+<td><span class="arithmatex">\(m\)</span> 个元素</td>
+<td>每个剩余类取一个代表</td>
+</tr>
+<tr>
+<td>缩系</td>
+<td><span class="arithmatex">\(\varphi(m)\)</span> 个元素</td>
+<td>与 <span class="arithmatex">\(m\)</span> 互素的剩余类代表</td>
+</tr>
+<tr>
+<td>Euler函数</td>
+<td><span class="arithmatex">\(\varphi(m)\)</span></td>
+<td>与 <span class="arithmatex">\(m\)</span> 互素且 <span class="arithmatex">\(\leq m\)</span> 的正整数个数</td>
+</tr>
+<tr>
+<td>Euler定理</td>
+<td><span class="arithmatex">\(a^{\varphi(m)} \equiv 1\)</span></td>
+<td><span class="arithmatex">\((a,m)=1\)</span></td>
+</tr>
+<tr>
+<td>Fermat小定理</td>
+<td><span class="arithmatex">\(a^{p-1} \equiv 1 \pmod{p}\)</span></td>
+<td><span class="arithmatex">\(p \nmid a\)</span></td>
+</tr>
+<tr>
+<td>Wilson定理</td>
+<td><span class="arithmatex">\((p-1)! \equiv -1 \pmod{p}\)</span></td>
+<td><span class="arithmatex">\(p\)</span> 是素数的充要条件</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition success">
+<p class="admonition-title">自检清单</p>
+<ul>
+<li>[ ] 能否计算任意正整数的Euler函数？</li>
+<li>[ ] 能否用Euler/Fermat定理简化大数幂的模运算？</li>
+<li>[ ] 是否理解完全剩余系和缩系的区别？</li>
+<li>[ ] 能否证明Euler定理？</li>
+<li>[ ] 是否理解Wilson定理的充要条件意义？</li>
+</ul>
+</div>
+<hr />
+<h1 id="3">第3章 同余式</h1>
+<h2 id="31">3.1 一元线性同余式</h2>
+<h3 id="311">3.1.1 基本形式与解</h3>
+<div class="admonition definition">
+<p class="admonition-title">一元线性同余式</p>
+<p>$<span class="arithmatex">\(ax \equiv b \pmod{m}\)</span>$
+其中 <span class="arithmatex">\(a, b, m\)</span> 为整数，<span class="arithmatex">\(m &gt; 0\)</span>。</p>
+</div>
+<div class="admonition theorem">
+<p class="admonition-title">线性同余式的解</p>
+<p>设 <span class="arithmatex">\(d = (a, m)\)</span>：</p>
+<ol>
+<li>若 <span class="arithmatex">\(d \nmid b\)</span>，则同余式<strong>无解</strong></li>
+<li>若 <span class="arithmatex">\(d \mid b\)</span>，则同余式恰有 <span class="arithmatex">\(d\)</span> 个解（模 <span class="arithmatex">\(m\)</span>）</li>
+</ol>
+<p>当 <span class="arithmatex">\(d \mid b\)</span> 时，解法为：</p>
+<ul>
+<li>将同余式化简为 <span class="arithmatex">\(\frac{a}{d} x \equiv \frac{b}{d} \pmod{\frac{m}{d}}\)</span></li>
+<li>因为 <span class="arithmatex">\((\frac{a}{d}, \frac{m}{d}) = 1\)</span>，利用扩展Euclidean算法求 <span class="arithmatex">\(\frac{a}{d}\)</span> 模 <span class="arithmatex">\(\frac{m}{d}\)</span> 的逆元</li>
+<li>得 <span class="arithmatex">\(x \equiv \left(\frac{a}{d}\right)^{-1} \cdot \frac{b}{d} \pmod{\frac{m}{d}}\)</span></li>
+<li>原同余式的 <span class="arithmatex">\(d\)</span> 个解为 <span class="arithmatex">\(x_0 + k \cdot \frac{m}{d}\)</span>，<span class="arithmatex">\(k = 0, 1, \dots, d-1\)</span></li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">例: 求解 <span class="arithmatex">\(6x \equiv 9 \pmod{15}\)</span></p>
+<p><span class="arithmatex">\(d = (6, 15) = 3\)</span>，<span class="arithmatex">\(3 \mid 9\)</span>，所以有 <span class="arithmatex">\(3\)</span> 个解。
+化简为 <span class="arithmatex">\(2x \equiv 3 \pmod{5}\)</span>
+<span class="arithmatex">\(2^{-1} \equiv 3 \pmod{5}\)</span>（因为 <span class="arithmatex">\(2 \times 3 = 6 \equiv 1 \pmod{5}\)</span>）
+<span class="arithmatex">\(x \equiv 3 \times 3 = 9 \equiv 4 \pmod{5}\)</span>
+三个解：<span class="arithmatex">\(x \equiv 4, 9, 14 \pmod{15}\)</span></p>
+</div>
+<hr />
+<h2 id="32-crt">3.2 中国剩余定理（CRT）</h2>
+<h3 id="321">3.2.1 中国剩余定理</h3>
+<div class="admonition theorem">
+<p class="admonition-title">中国剩余定理（孙子定理）</p>
+<p>设 <span class="arithmatex">\(m_1, m_2, \dots, m_k\)</span> 两两互素，<span class="arithmatex">\(M = m_1 m_2 \cdots m_k\)</span>。则对任意整数 <span class="arithmatex">\(b_1, b_2, \dots, b_k\)</span>，同余式组：
+$<span class="arithmatex">\(\begin{cases}
+x \equiv b_1 \pmod{m_1} \\
+x \equiv b_2 \pmod{m_2} \\
+\quad \vdots \\
+x \equiv b_k \pmod{m_k}
+\end{cases}\)</span>$
+有唯一解（模 <span class="arithmatex">\(M\)</span>），且解为：
+$<span class="arithmatex">\(x \equiv \sum_{i=1}^{k} b_i M_i M_i^{-1} \pmod{M}\)</span>$
+其中 <span class="arithmatex">\(M_i = M / m_i\)</span>，<span class="arithmatex">\(M_i^{-1}\)</span> 是 <span class="arithmatex">\(M_i\)</span> 模 <span class="arithmatex">\(m_i\)</span> 的逆元。</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">例: 求解同余式组</p>
+<div class="arithmatex">\[\begin{cases} x \equiv 2 \pmod{3} \\ x \equiv 3 \pmod{5} \\ x \equiv 2 \pmod{7} \end{cases}\]</div>
+<p><span class="arithmatex">\(M = 105\)</span>，<span class="arithmatex">\(M_1 = 35, M_2 = 21, M_3 = 15\)</span>
+<span class="arithmatex">\(M_1^{-1} \bmod 3\)</span>: <span class="arithmatex">\(35 \equiv 2 \pmod{3}\)</span>，<span class="arithmatex">\(2^{-1} \equiv 2 \pmod{3}\)</span>
+<span class="arithmatex">\(M_2^{-1} \bmod 5\)</span>: <span class="arithmatex">\(21 \equiv 1 \pmod{5}\)</span>，<span class="arithmatex">\(1^{-1} \equiv 1 \pmod{5}\)</span>
+<span class="arithmatex">\(M_3^{-1} \bmod 7\)</span>: <span class="arithmatex">\(15 \equiv 1 \pmod{7}\)</span>，<span class="arithmatex">\(1^{-1} \equiv 1 \pmod{7}\)</span></p>
+<p><span class="arithmatex">\(x \equiv 2 \times 35 \times 2 + 3 \times 21 \times 1 + 2 \times 15 \times 1 = 140 + 63 + 30 = 233 \equiv 23 \pmod{105}\)</span></p>
+</div>
+<div class="admonition corollary">
+<p class="admonition-title">Euler函数的积性</p>
+<p>若 <span class="arithmatex">\((m_1, m_2) = 1\)</span>，则 <span class="arithmatex">\(\varphi(m_1 m_2) = \varphi(m_1) \varphi(m_2)\)</span>。</p>
+</div>
+<hr />
+<h2 id="33-hensel">3.3 高次同余式与Hensel引理</h2>
+<h3 id="331">3.3.1 高次同余式的概念</h3>
+<div class="admonition definition">
+<p class="admonition-title">高次同余式</p>
+<p>$<span class="arithmatex">\(f(x) \equiv 0 \pmod{m}\)</span>$
+其中 <span class="arithmatex">\(f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0\)</span> 是整系数多项式。</p>
+</div>
+<h3 id="332">3.3.2 模为合数时的化简</h3>
+<div class="admonition theorem">
+<p class="admonition-title">合数模的分解</p>
+<p>设 <span class="arithmatex">\(m = m_1 m_2 \cdots m_k\)</span>，<span class="arithmatex">\(m_1, m_2, \dots, m_k\)</span> 两两互素。则同余式 <span class="arithmatex">\(f(x) \equiv 0 \pmod{m}\)</span> 等价于同余式组：
+$<span class="arithmatex">\(\begin{cases}
+f(x) \equiv 0 \pmod{m_1} \\
+f(x) \equiv 0 \pmod{m_2} \\
+\quad \vdots \\
+f(x) \equiv 0 \pmod{m_k}
+\end{cases}\)</span>$
+若各同余式 <span class="arithmatex">\(f(x) \equiv 0 \pmod{m_i}\)</span> 分别有 <span class="arithmatex">\(T_i\)</span> 个解，则原同余式有 <span class="arithmatex">\(T_1 T_2 \cdots T_k\)</span> 个解。</p>
+</div>
+<h3 id="333-hensel">3.3.3 Hensel引理（同余式的提升）</h3>
+<div class="admonition theorem">
+<p class="admonition-title">Hensel引理</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是素数，<span class="arithmatex">\(f(x)\)</span> 是整系数多项式。若 <span class="arithmatex">\(x \equiv x_1 \pmod{p}\)</span> 是 <span class="arithmatex">\(f(x) \equiv 0 \pmod{p}\)</span> 的解，且：
+$<span class="arithmatex">\(f'(x_1) \not\equiv 0 \pmod{p}\)</span>$
+则存在唯一的 <span class="arithmatex">\(x \equiv x_\alpha \pmod{p^\alpha}\)</span> 使得：
+$<span class="arithmatex">\(f(x_\alpha) \equiv 0 \pmod{p^\alpha}, \quad x_\alpha \equiv x_1 \pmod{p}\)</span>$</p>
+<p><strong>提升公式</strong>: 从 <span class="arithmatex">\(x_k\)</span>（模 <span class="arithmatex">\(p^k\)</span> 的解）提升到 <span class="arithmatex">\(x_{k+1}\)</span>（模 <span class="arithmatex">\(p^{k+1}\)</span> 的解）：
+$<span class="arithmatex">\(x_{k+1} \equiv x_k - f(x_k) \cdot (f'(x_k))^{-1} \pmod{p^{k+1}}\)</span>$</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Hensel引理的意义</p>
+<ul>
+<li>将模 <span class="arithmatex">\(p\)</span> 的解"提升"为模 <span class="arithmatex">\(p^\alpha\)</span> 的解</li>
+<li>是p-adic分析在数论中的体现</li>
+<li>条件 <span class="arithmatex">\(f'(x_1) \not\equiv 0 \pmod{p}\)</span> 是关键（非奇异性条件）</li>
+</ul>
+</div>
+<hr />
+<h2 id="34">3.4 素数模的高次同余式</h2>
+<h3 id="341">3.4.1 素数模时的解数</h3>
+<div class="admonition theorem">
+<p class="admonition-title">素数模高次同余式的解数</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是素数，<span class="arithmatex">\(f(x) = a_n x^n + \cdots + a_1 x + a_0\)</span>，<span class="arithmatex">\(p \nmid a_n\)</span>。则同余式 <span class="arithmatex">\(f(x) \equiv 0 \pmod{p}\)</span> 的解数不超过 <span class="arithmatex">\(n\)</span>（即 <span class="arithmatex">\(\deg f\)</span>）。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Lagrange定理</p>
+<p>这个结论有时被称为<strong>Lagrange定理</strong>：素数模的多项式同余式的解数不超过多项式的次数。</p>
+</div>
+<h3 id="342-mathbbz_p">3.4.2 <span class="arithmatex">\(\mathbb{Z}_p\)</span> 上的多项式除法</h3>
+<div class="admonition theorem">
+<p class="admonition-title">带余除法</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是素数，<span class="arithmatex">\(f(x), g(x)\)</span> 是整系数多项式，<span class="arithmatex">\(p \nmid \text{lc}(g)\)</span>。则存在整系数多项式 <span class="arithmatex">\(q(x), r(x)\)</span> 使得：
+$<span class="arithmatex">\(f(x) = g(x) q(x) + r(x), \quad \deg r &lt; \deg g\)</span>$
+且系数均模 <span class="arithmatex">\(p\)</span> 意义下唯一。</p>
+</div>
+<hr />
+<h2 id="3_1">第3章 习题精选</h2>
+<div class="admonition question">
+<p class="admonition-title">基础练习</p>
+<ol>
+<li>求解 <span class="arithmatex">\(7x \equiv 5 \pmod{18}\)</span></li>
+<li>用CRT求解：<span class="arithmatex">\(x \equiv 1 \pmod{2}, x \equiv 2 \pmod{3}, x \equiv 3 \pmod{5}\)</span></li>
+<li>将模 <span class="arithmatex">\(105\)</span> 的同余式分解为模 <span class="arithmatex">\(3, 5, 7\)</span> 的同余式组</li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">提高题</p>
+<ol>
+<li>用Hensel引理：从 <span class="arithmatex">\(x^2 \equiv 1 \pmod{5}\)</span> 的解提升到 <span class="arithmatex">\(x^2 \equiv 1 \pmod{5^3}\)</span> 的解</li>
+<li>证明：<span class="arithmatex">\(x^3 + x + 1 \equiv 0 \pmod{p}\)</span> 对任意素数 <span class="arithmatex">\(p\)</span> 的解数 <span class="arithmatex">\(\leq 3\)</span></li>
+<li>证明 Wilson 定理的逆：若 <span class="arithmatex">\((n-1)! \equiv -1 \pmod{n}\)</span>，则 <span class="arithmatex">\(n\)</span> 是素数</li>
+</ol>
+</div>
+<hr />
+<h2 id="3_2">第3章 知识总结</h2>
+<div class="admonition abstract">
+<p class="admonition-title">核心概念表</p>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>关键点</th>
+<th>应用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>线性同余式 <span class="arithmatex">\(ax \equiv b \pmod{m}\)</span></td>
+<td><span class="arithmatex">\(d=(a,m)\)</span> 决定解数</td>
+<td>求模逆元</td>
+</tr>
+<tr>
+<td>中国剩余定理</td>
+<td>模两两互素时唯一解</td>
+<td>RSA解密加速</td>
+</tr>
+<tr>
+<td>Hensel引理</td>
+<td>模 <span class="arithmatex">\(p\)</span> 解提升到模 <span class="arithmatex">\(p^\alpha\)</span></td>
+<td>局部-整体原则</td>
+</tr>
+<tr>
+<td>Lagrange定理</td>
+<td>素数模解数 <span class="arithmatex">\(\leq \deg f\)</span></td>
+<td>理论界限</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition success">
+<p class="admonition-title">自检清单</p>
+<ul>
+<li>[ ] 能否用扩展Euclidean算法求解线性同余式？</li>
+<li>[ ] 能否正确应用中国剩余定理？</li>
+<li>[ ] 是否理解Hensel引理的条件和提升过程？</li>
+<li>[ ] 能否将合数模的同余式分解为素数幂模的同余式？</li>
+</ul>
+</div>
+<hr />
+<h1 id="4">第4章 二次同余式与平方剩余</h1>
+<h2 id="41">4.1 一般二次同余式</h2>
+<h3 id="411">4.1.1 化简为标准形式</h3>
+<div class="admonition theorem">
+<p class="admonition-title">二次同余式的化简</p>
+<p>一般二次同余式：
+$<span class="arithmatex">\(ax^2 + bx + c \equiv 0 \pmod{m}, \quad (a, m) = 1\)</span>$
+配方后可化为：
+$<span class="arithmatex">\(y^2 \equiv d \pmod{m}\)</span>$
+其中 <span class="arithmatex">\(y = 2ax + b\)</span>，<span class="arithmatex">\(d = b^2 - 4ac\)</span>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">化简的前提</p>
+<ul>
+<li>需要 <span class="arithmatex">\((2a, m) = 1\)</span>，即 <span class="arithmatex">\((2, m) = 1\)</span> 且 <span class="arithmatex">\((a, m) = 1\)</span>（<span class="arithmatex">\(m\)</span> 为奇数）</li>
+<li>当 <span class="arithmatex">\(m\)</span> 为奇数时，<span class="arithmatex">\(2a\)</span> 有模 <span class="arithmatex">\(m\)</span> 的逆元，可以完成配方</li>
+</ul>
+</div>
+<hr />
+<h2 id="42">4.2 平方剩余与平方非剩余</h2>
+<h3 id="421">4.2.1 基本定义</h3>
+<div class="admonition definition">
+<p class="admonition-title">平方剩余（二次剩余）与平方非剩余</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是奇素数，<span class="arithmatex">\((a, p) = 1\)</span>。</p>
+<ul>
+<li>若同余式 <span class="arithmatex">\(x^2 \equiv a \pmod{p}\)</span> <strong>有解</strong>，则称 <span class="arithmatex">\(a\)</span> 是模 <span class="arithmatex">\(p\)</span> 的<strong>二次剩余</strong>（QR）</li>
+<li>若同余式 <span class="arithmatex">\(x^2 \equiv a \pmod{p}\)</span> <strong>无解</strong>，则称 <span class="arithmatex">\(a\)</span> 是模 <span class="arithmatex">\(p\)</span> 的<strong>二次非剩余</strong>（QNR）</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">基本计数</p>
+<p>模 <span class="arithmatex">\(p\)</span> 的缩系 <span class="arithmatex">\(\{1, 2, \dots, p-1\}\)</span> 中：</p>
+<ul>
+<li>恰有 <span class="arithmatex">\(\frac{p-1}{2}\)</span> 个二次剩余</li>
+<li>恰有 <span class="arithmatex">\(\frac{p-1}{2}\)</span> 个二次非剩余</li>
+</ul>
+<p>二次剩余恰好是 <span class="arithmatex">\(1^2, 2^2, \dots, \left(\frac{p-1}{2}\right)^2 \pmod{p}\)</span></p>
+</div>
+<hr />
+<h2 id="43-euler">4.3 Euler判别法则</h2>
+<div class="admonition theorem">
+<p class="admonition-title">Euler判别法则</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是奇素数，<span class="arithmatex">\((a, p) = 1\)</span>，则：
+$<span class="arithmatex">\(a^{\frac{p-1}{2}} \equiv \begin{cases} 1 \pmod{p}, &amp; \text{若 } a \text{ 是模 } p \text{ 的二次剩余} \\ -1 \pmod{p}, &amp; \text{若 } a \text{ 是模 } p \text{ 的二次非剩余} \end{cases}\)</span>$</p>
+</div>
+<div class="admonition proof">
+<p class="admonition-title">证明</p>
+<p><strong>必要性（QR方向）</strong>: 若 <span class="arithmatex">\(x^2 \equiv a \pmod{p}\)</span> 有解 <span class="arithmatex">\(x_0\)</span>，则：
+$<span class="arithmatex">\(a^{\frac{p-1}{2}} \equiv (x_0^2)^{\frac{p-1}{2}} = x_0^{p-1} \equiv 1 \pmod{p}\)</span>$
+（由Fermat小定理）</p>
+<p><strong>必要性（QNR方向）</strong>: <span class="arithmatex">\(a^{\frac{p-1}{2}}\)</span> 满足 <span class="arithmatex">\(y^2 \equiv 1 \pmod{p}\)</span>，所以 <span class="arithmatex">\(a^{\frac{p-1}{2}} \equiv \pm 1 \pmod{p}\)</span>。
+多项式 <span class="arithmatex">\(x^{\frac{p-1}{2}} - 1\)</span> 模 <span class="arithmatex">\(p\)</span> 至多有 <span class="arithmatex">\(\frac{p-1}{2}\)</span> 个根。
+而恰好有 <span class="arithmatex">\(\frac{p-1}{2}\)</span> 个QR满足此方程，所以QNR只能满足 <span class="arithmatex">\(a^{\frac{p-1}{2}} \equiv -1 \pmod{p}\)</span>。
+证毕。</p>
+</div>
+<div class="admonition corollary">
+<p class="admonition-title">特殊情况的判别</p>
+<ul>
+<li><span class="arithmatex">\(\left(\frac{-1}{p}\right) = (-1)^{\frac{p-1}{2}}\)</span>，即 <span class="arithmatex">\(p = 4k+1\)</span> 时 <span class="arithmatex">\(-1\)</span> 是QR，<span class="arithmatex">\(p = 4k+3\)</span> 时 <span class="arithmatex">\(-1\)</span> 是QNR</li>
+<li><span class="arithmatex">\(\left(\frac{2}{p}\right) = (-1)^{\frac{p^2-1}{8}}\)</span>，即 <span class="arithmatex">\(p \equiv \pm 1 \pmod{8}\)</span> 时 <span class="arithmatex">\(2\)</span> 是QR，<span class="arithmatex">\(p \equiv \pm 3 \pmod{8}\)</span> 时 <span class="arithmatex">\(2\)</span> 是QNR</li>
+</ul>
+</div>
+<hr />
+<h2 id="44-legendre">4.4 Legendre符号</h2>
+<h3 id="441">4.4.1 定义与性质</h3>
+<div class="admonition definition">
+<p class="admonition-title">Legendre符号</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是奇素数，整数 <span class="arithmatex">\(a\)</span>。定义：
+$<span class="arithmatex">\(\left(\frac{a}{p}\right) = \begin{cases} 0, &amp; p \mid a \\ 1, &amp; a \text{ 是模 } p \text{ 的二次剩余} \\ -1, &amp; a \text{ 是模 } p \text{ 的二次非剩余} \end{cases}\)</span>$</p>
+</div>
+<div class="admonition theorem">
+<p class="admonition-title">Legendre符号的性质</p>
+<ol>
+<li><span class="arithmatex">\(\left(\frac{a}{p}\right) \equiv a^{\frac{p-1}{2}} \pmod{p}\)</span>（Euler判别法）</li>
+<li><span class="arithmatex">\(\left(\frac{ab}{p}\right) = \left(\frac{a}{p}\right)\left(\frac{b}{p}\right)\)</span>（完全积性）</li>
+<li>若 <span class="arithmatex">\(a \equiv b \pmod{p}\)</span>，则 <span class="arithmatex">\(\left(\frac{a}{p}\right) = \left(\frac{b}{p}\right)\)</span></li>
+<li><span class="arithmatex">\(\left(\frac{a^2}{p}\right) = 1\)</span>（当 <span class="arithmatex">\(p \nmid a\)</span> 时）</li>
+<li><span class="arithmatex">\(\left(\frac{-1}{p}\right) = (-1)^{\frac{p-1}{2}}\)</span></li>
+</ol>
+</div>
+<h3 id="442-gauss">4.4.2 Gauss引理</h3>
+<div class="admonition theorem">
+<p class="admonition-title">Gauss引理</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是奇素数，<span class="arithmatex">\((a, p) = 1\)</span>。考虑序列 <span class="arithmatex">\(a, 2a, 3a, \dots, \frac{p-1}{2} a\)</span>。
+设其中模 <span class="arithmatex">\(p\)</span> 的最小正剩余大于 <span class="arithmatex">\(\frac{p}{2}\)</span> 的个数为 <span class="arithmatex">\(n\)</span>，则：
+$<span class="arithmatex">\(\left(\frac{a}{p}\right) = (-1)^n\)</span>$</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Gauss引理的应用</p>
+<p>Gauss引理是证明二次互反律的关键工具。</p>
+</div>
+<h3 id="443-gauss">4.4.3 二次互反律（Gauss二次互反律）</h3>
+<div class="admonition theorem">
+<p class="admonition-title">二次互反律</p>
+<p>设 <span class="arithmatex">\(p, q\)</span> 是不同的奇素数，则：
+$<span class="arithmatex">\(\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2} \cdot \frac{q-1}{2}}\)</span>$</p>
+<p>等价地：
+$<span class="arithmatex">\(\left(\frac{p}{q}\right) = \begin{cases} \left(\frac{q}{p}\right), &amp; \text{若 } p \equiv 1 \pmod{4} \text{ 或 } q \equiv 1 \pmod{4} \\ -\left(\frac{q}{p}\right), &amp; \text{若 } p \equiv q \equiv 3 \pmod{4} \end{cases}\)</span>$</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">二次互反律的补充定律</p>
+<ul>
+<li><strong>第一补充定律</strong>: <span class="arithmatex">\(\left(\frac{-1}{p}\right) = (-1)^{\frac{p-1}{2}}\)</span></li>
+<li><strong>第二补充定律</strong>: <span class="arithmatex">\(\left(\frac{2}{p}\right) = (-1)^{\frac{p^2-1}{8}}\)</span></li>
+</ul>
+<p>即：<span class="arithmatex">\(p \equiv \pm 1 \pmod{8}\)</span> 时 <span class="arithmatex">\(\left(\frac{2}{p}\right) = 1\)</span>；<span class="arithmatex">\(p \equiv \pm 3 \pmod{8}\)</span> 时 <span class="arithmatex">\(\left(\frac{2}{p}\right) = -1\)</span></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">计算Legendre符号</p>
+<p>计算 <span class="arithmatex">\(\left(\frac{7}{41}\right)\)</span>：
+<span class="arithmatex">\(7 \equiv 3 \pmod{4}\)</span>，<span class="arithmatex">\(41 \equiv 1 \pmod{4}\)</span>
+因为 <span class="arithmatex">\(41 \equiv 1 \pmod{4}\)</span>，所以 <span class="arithmatex">\(\left(\frac{7}{41}\right) = \left(\frac{41}{7}\right)\)</span>
+<span class="arithmatex">\(41 \equiv 6 \pmod{7}\)</span>，所以 <span class="arithmatex">\(\left(\frac{41}{7}\right) = \left(\frac{6}{7}\right) = \left(\frac{2}{7}\right)\left(\frac{3}{7}\right)\)</span>
+<span class="arithmatex">\(\left(\frac{2}{7}\right) = (-1)^{\frac{49-1}{8}} = (-1)^6 = 1\)</span>
+<span class="arithmatex">\(\left(\frac{3}{7}\right)\)</span>: <span class="arithmatex">\(3 \equiv 3, 7 \equiv 3 \pmod{4}\)</span>，所以 <span class="arithmatex">\(\left(\frac{3}{7}\right) = -\left(\frac{7}{3}\right) = -\left(\frac{1}{3}\right) = -1\)</span>
+所以 <span class="arithmatex">\(\left(\frac{7}{41}\right) = 1 \times (-1) = -1\)</span></p>
+</div>
+<hr />
+<h2 id="45-jacobi">4.5 Jacobi符号</h2>
+<h3 id="451-jacobi">4.5.1 Jacobi符号的定义</h3>
+<div class="admonition definition">
+<p class="admonition-title">Jacobi符号</p>
+<p>设 <span class="arithmatex">\(n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}\)</span> 是正奇数（标准分解），<span class="arithmatex">\(a\)</span> 是整数。定义：
+$<span class="arithmatex">\(\left(\frac{a}{n}\right) = \prod_{i=1}^{k} \left(\frac{a}{p_i}\right)^{\alpha_i}\)</span>$</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">关键区别</p>
+<p>Jacobi符号 <strong>不等于</strong> 二次剩余的判别！</p>
+<ul>
+<li><span class="arithmatex">\(\left(\frac{a}{n}\right) = -1 \implies a\)</span> 是模 <span class="arithmatex">\(n\)</span> 的QNR（可以判断无解）</li>
+<li><span class="arithmatex">\(\left(\frac{a}{n}\right) = 1 \not\implies a\)</span> 是模 <span class="arithmatex">\(n\)</span> 的QR（不能判断有解）</li>
+</ul>
+<p>Jacobi符号的主要价值在于<strong>快速计算Legendre符号</strong>，利用二次互反律的推广形式。</p>
+</div>
+<h3 id="452-jacobi">4.5.2 Jacobi符号的计算</h3>
+<div class="admonition theorem">
+<p class="admonition-title">Jacobi符号的二次互反律</p>
+<p>设 <span class="arithmatex">\(m, n\)</span> 是正奇数，<span class="arithmatex">\((m, n) = 1\)</span>，则：
+$<span class="arithmatex">\(\left(\frac{m}{n}\right)\left(\frac{n}{m}\right) = (-1)^{\frac{m-1}{2} \cdot \frac{n-1}{2}}\)</span>$</p>
+<p>补充定律：</p>
+<ul>
+<li><span class="arithmatex">\(\left(\frac{-1}{n}\right) = (-1)^{\frac{n-1}{2}}\)</span></li>
+<li><span class="arithmatex">\(\left(\frac{2}{n}\right) = (-1)^{\frac{n^2-1}{8}}\)</span></li>
+</ul>
+</div>
+<div class="admonition algorithm">
+<p class="admonition-title">Jacobi符号的快速计算</p>
+<p>类似Euclidean算法，递归地：</p>
+<ol>
+<li>提出因子 <span class="arithmatex">\(2\)</span> 的幂，用第二补充定律</li>
+<li>提出因子 <span class="arithmatex">\((-1)\)</span> 的幂，用第一补充定律</li>
+<li>用互反律翻转分子分母</li>
+<li>分子取模分母，重复</li>
+</ol>
+<p>时间复杂度：<span class="arithmatex">\(O(\log^2 n)\)</span></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">计算 <span class="arithmatex">\(\left(\frac{158}{379}\right)\)</span>（实际是Legendre符号，用Jacobi符号方法快速计算）</p>
+<p>$<span class="arithmatex">\(\left(\frac{158}{379}\right) = \left(\frac{2}{379}\right)\left(\frac{79}{379}\right)\)</span>$
+<span class="arithmatex">\(379 \equiv 3 \pmod{8}\)</span>，所以 <span class="arithmatex">\(\left(\frac{2}{379}\right) = -1\)</span></p>
+<p><span class="arithmatex">\(\left(\frac{79}{379}\right)\)</span>: <span class="arithmatex">\(79 \equiv 3 \pmod{4}\)</span>，<span class="arithmatex">\(379 \equiv 3 \pmod{4}\)</span>，所以
+<span class="arithmatex">\(\left(\frac{79}{379}\right) = -\left(\frac{379}{79}\right) = -\left(\frac{64}{79}\right) = -\left(\frac{2^6}{79}\right) = -1\)</span></p>
+<p>所以 <span class="arithmatex">\(\left(\frac{158}{379}\right) = (-1)(-1) = 1\)</span></p>
+</div>
+<hr />
+<h2 id="46">4.6 模平方根的计算</h2>
+<h3 id="461-p-p-equiv-3-pmod4">4.6.1 模 <span class="arithmatex">\(p\)</span> 平方根（<span class="arithmatex">\(p \equiv 3 \pmod{4}\)</span> 的情况）</h3>
+<div class="admonition theorem">
+<p class="admonition-title">简单情形</p>
+<p>若 <span class="arithmatex">\(p \equiv 3 \pmod{4}\)</span> 是素数且 <span class="arithmatex">\(\left(\frac{a}{p}\right) = 1\)</span>，则：
+$<span class="arithmatex">\(x \equiv \pm a^{\frac{p+1}{4}} \pmod{p}\)</span>$
+是 <span class="arithmatex">\(x^2 \equiv a \pmod{p}\)</span> 的解。</p>
+</div>
+<div class="admonition proof">
+<p class="admonition-title">验证</p>
+<p><span class="arithmatex">\(x^2 = a^{\frac{p+1}{2}} = a \cdot a^{\frac{p-1}{2}} \equiv a \cdot 1 = a \pmod{p}\)</span>
+证毕。</p>
+</div>
+<h3 id="462-p-cipollatonelli-shanks">4.6.2 模 <span class="arithmatex">\(p\)</span> 平方根（一般情形 -- Cipolla/Tonelli-Shanks算法的思想）</h3>
+<div class="admonition theorem">
+<p class="admonition-title">定理4.6.3（一般素数模平方根算法）</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是奇素数，<span class="arithmatex">\(p - 1 = 2^t \cdot s\)</span>，<span class="arithmatex">\(t \geq 1\)</span>，<span class="arithmatex">\(s\)</span> 是奇数。
+设 <span class="arithmatex">\(n\)</span> 是模 <span class="arithmatex">\(p\)</span> 的一个平方非剩余，<span class="arithmatex">\(b := n^s \pmod{p}\)</span>。</p>
+<p>如果 <span class="arithmatex">\(x^2 \equiv a \pmod{p}\)</span> 有解，则通过以下迭代过程可求得解：</p>
+<ol>
+<li>令 <span class="arithmatex">\(x_{t-1} := a^{\frac{s+1}{2}} \pmod{p}\)</span></li>
+<li>对 <span class="arithmatex">\(k = 0, 1, \dots, t-2\)</span>：</li>
+<li>计算 <span class="arithmatex">\(a^{-1} x_{t-k-1}^2\)</span> 的 <span class="arithmatex">\(2^{t-k-1}\)</span> 次幂</li>
+<li>若 <span class="arithmatex">\(\equiv 1 \pmod{p}\)</span>，令 <span class="arithmatex">\(j_{k-1} = 0\)</span></li>
+<li>若 <span class="arithmatex">\(\equiv -1 \pmod{p}\)</span>，令 <span class="arithmatex">\(j_{k-1} = 1\)</span></li>
+<li><span class="arithmatex">\(x_{t-k-2} = x_{t-k-1} \cdot b^{j_{k-1} \cdot 2^{k}} \pmod{p}\)</span></li>
+<li>最终 <span class="arithmatex">\(x_0\)</span> 即为 <span class="arithmatex">\(x^2 \equiv a \pmod{p}\)</span> 的解</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="admonition-title">算法复杂度</p>
+<p>需要 <span class="arithmatex">\(O(\log p)\)</span> 次模乘运算，效率与Euclidean算法相当。</p>
+</div>
+<h3 id="463">4.6.3 模合数的平方根</h3>
+<div class="admonition theorem">
+<p class="admonition-title">定理4.6.4（模奇素数幂的平方根）</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是奇素数。同余式 <span class="arithmatex">\(x^2 \equiv a \pmod{p^\alpha}\)</span>，<span class="arithmatex">\((a, p) = 1\)</span>，有解的充要条件是 <span class="arithmatex">\(a\)</span> 为模 <span class="arithmatex">\(p\)</span> 的二次剩余（即 <span class="arithmatex">\(\left(\frac{a}{p}\right) = 1\)</span>）。
+有解时，解数为 <span class="arithmatex">\(2\)</span>。</p>
+</div>
+<div class="admonition theorem">
+<p class="admonition-title">定理4.6.5（模 <span class="arithmatex">\(2^\alpha\)</span> 的平方根）</p>
+<p>设 <span class="arithmatex">\(\alpha &gt; 1\)</span>。同余式 <span class="arithmatex">\(x^2 \equiv a \pmod{2^\alpha}\)</span>，<span class="arithmatex">\((a, 2) = 1\)</span>，有解的必要条件：</p>
+<ul>
+<li><span class="arithmatex">\(\alpha = 2\)</span> 时: <span class="arithmatex">\(a \equiv 1 \pmod{4}\)</span>（解数为 <span class="arithmatex">\(2\)</span>）</li>
+<li><span class="arithmatex">\(\alpha \geq 3\)</span> 时: <span class="arithmatex">\(a \equiv 1 \pmod{8}\)</span>（解数为 <span class="arithmatex">\(4\)</span>）</li>
+</ul>
+</div>
+<div class="admonition theorem">
+<p class="admonition-title">定理4.6.2（模合数的平方根数）</p>
+<p>设 <span class="arithmatex">\(m = 2^\delta p_1^{\alpha_1} \cdots p_k^{\alpha_k}\)</span>，<span class="arithmatex">\((a, m) = 1\)</span>。同余式 <span class="arithmatex">\(x^2 \equiv a \pmod{m}\)</span> 有解的条件是：</p>
+<ul>
+<li><span class="arithmatex">\(a\)</span> 是模每个 <span class="arithmatex">\(p_i\)</span> 的二次剩余</li>
+<li>若 <span class="arithmatex">\(\delta = 2\)</span>，<span class="arithmatex">\(a \equiv 1 \pmod{4}\)</span>；若 <span class="arithmatex">\(\delta \geq 3\)</span>，<span class="arithmatex">\(a \equiv 1 \pmod{8}\)</span></li>
+</ul>
+<p>有解时，解数 <span class="arithmatex">\(T\)</span> 为各分量解数之积。</p>
+</div>
+<hr />
+<h2 id="47-x2-y2-p">4.7 方程 <span class="arithmatex">\(x^2 + y^2 = p\)</span></h2>
+<div class="admonition theorem">
+<p class="admonition-title">定理4.7.1</p>
+<p>设 <span class="arithmatex">\(p\)</span> 是素数，方程 <span class="arithmatex">\(x^2 + y^2 = p\)</span> 有解的充要条件是 <span class="arithmatex">\(p = 2\)</span> 或 <span class="arithmatex">\(p \equiv 1 \pmod{4}\)</span>。</p>
+</div>
+<div class="admonition proof">
+<p class="admonition-title">证明概要</p>
+<p><strong>必要性</strong>: 若 <span class="arithmatex">\(x_0^2 + y_0^2 = p\)</span>，取模 <span class="arithmatex">\(p\)</span> 可推出 <span class="arithmatex">\(x^2 \equiv -1 \pmod{p}\)</span> 有解，从而 <span class="arithmatex">\(p = 2\)</span> 或 <span class="arithmatex">\(p \equiv 1 \pmod{4}\)</span>。</p>
+<p><strong>充分性</strong>（构造性证明）:</p>
+<ol>
+<li>因为 <span class="arithmatex">\(\left(\frac{-1}{p}\right) = 1\)</span>，存在 <span class="arithmatex">\(x_0\)</span> 使得 <span class="arithmatex">\(x_0^2 \equiv -1 \pmod{p}\)</span></li>
+<li>令 <span class="arithmatex">\(y_0 = 1\)</span>，有 <span class="arithmatex">\(x_0^2 + y_0^2 = m_0 p\)</span>，<span class="arithmatex">\(0 &lt; m_0 &lt; p\)</span></li>
+<li>取最小的 <span class="arithmatex">\(m\)</span> 使 <span class="arithmatex">\(x^2 + y^2 = mp\)</span> 有解</li>
+<li>若 <span class="arithmatex">\(m &gt; 1\)</span>，利用恒等式 <span class="arithmatex">\((u^2+v^2)(x^2+y^2) = (ux+vy)^2 + (uy-vx)^2\)</span> 可以构造更小的 <span class="arithmatex">\(m' &lt; m\)</span>，矛盾</li>
+<li>故 <span class="arithmatex">\(m = 1\)</span>
+证毕。</li>
+</ol>
+</div>
+<div class="admonition algorithm">
+<p class="admonition-title">求解 <span class="arithmatex">\(x^2 + y^2 = p\)</span> 的步骤</p>
+<ol>
+<li>求 <span class="arithmatex">\(x_0\)</span> 使 <span class="arithmatex">\(x_0^2 \equiv -1 \pmod{p}\)</span>（<span class="arithmatex">\(p = 8k+5\)</span> 时可用 <span class="arithmatex">\(x_0 = 2^{\frac{p-1}{4}}\)</span>）</li>
+<li>令 <span class="arithmatex">\(y_0 = 1\)</span>，计算 <span class="arithmatex">\(m_0 = (x_0^2 + y_0^2)/p\)</span></li>
+<li>反复利用恒等式降低 <span class="arithmatex">\(m\)</span>，直到 <span class="arithmatex">\(m = 1\)</span></li>
+</ol>
+</div>
+<hr />
+<h2 id="4_1">第4章 习题精选</h2>
+<div class="admonition question">
+<p class="admonition-title">基础练习</p>
+<ol>
+<li>求模 <span class="arithmatex">\(p = 13\)</span> 的所有二次剩余和二次非剩余</li>
+<li>计算Legendre符号：<span class="arithmatex">\(\left(\frac{17}{37}\right)\)</span>, <span class="arithmatex">\(\left(\frac{151}{373}\right)\)</span></li>
+<li>判断 <span class="arithmatex">\(x^2 \equiv 7 \pmod{227}\)</span> 是否有解</li>
+<li>求解 <span class="arithmatex">\(x^2 \equiv -1 \pmod{401}\)</span></li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">计算题</p>
+<ol>
+<li>求解 <span class="arithmatex">\(x^2 \equiv 186 \pmod{401}\)</span></li>
+<li>求解 <span class="arithmatex">\(x^2 \equiv 41 \pmod{401}\)</span></li>
+<li>求解 <span class="arithmatex">\(x^2 \equiv 39 \pmod{105}\)</span></li>
+<li>设 <span class="arithmatex">\(p = 1069\)</span>，求解 <span class="arithmatex">\(x^2 + y^2 = p\)</span></li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">证明题</p>
+<ol>
+<li>设 <span class="arithmatex">\(p\)</span> 是奇素数，证明 <span class="arithmatex">\(x^2 \equiv -3 \pmod{p}\)</span> 有解的充要条件是 <span class="arithmatex">\(p \equiv 1 \pmod{3}\)</span>（结合 <span class="arithmatex">\(p\)</span> 为奇数）</li>
+<li>证明：模 <span class="arithmatex">\(p\)</span> 的所有二次剩余之积 <span class="arithmatex">\(\equiv (-1)^{\frac{p+1}{2}} \pmod{p}\)</span></li>
+<li>证明 <span class="arithmatex">\(2^p - 1\)</span> 的素因数 <span class="arithmatex">\(\equiv \pm 1 \pmod{8}\)</span>（<span class="arithmatex">\(p &gt; 2\)</span> 为素数）</li>
+<li>证明：对任意素数 <span class="arithmatex">\(p\)</span>，<span class="arithmatex">\((x^2 - 2)(x^2 - 17)(x^2 - 34) \equiv 0 \pmod{p}\)</span> 有解</li>
+</ol>
+</div>
+<hr />
+<h2 id="4_2">第4章 知识总结</h2>
+<div class="admonition abstract">
+<p class="admonition-title">核心概念表</p>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>符号/公式</th>
+<th>关键点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>二次剩余</td>
+<td>QR/QNR</td>
+<td><span class="arithmatex">\(x^2 \equiv a \pmod{p}\)</span> 是否有解</td>
+</tr>
+<tr>
+<td>Euler判别法</td>
+<td><span class="arithmatex">\(a^{\frac{p-1}{2}} \equiv \pm 1\)</span></td>
+<td>判别QR/QNR</td>
+</tr>
+<tr>
+<td>Legendre符号</td>
+<td><span class="arithmatex">\(\left(\frac{a}{p}\right)\)</span></td>
+<td>只能对素数模定义</td>
+</tr>
+<tr>
+<td>Gauss引理</td>
+<td><span class="arithmatex">\(\left(\frac{a}{p}\right) = (-1)^n\)</span></td>
+<td>证明互反律的工具</td>
+</tr>
+<tr>
+<td>二次互反律</td>
+<td><span class="arithmatex">\(\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\)</span></td>
+<td>核心计算工具</td>
+</tr>
+<tr>
+<td>Jacobi符号</td>
+<td><span class="arithmatex">\(\left(\frac{a}{n}\right)\)</span></td>
+<td>Legendre符号的推广，加速计算</td>
+</tr>
+<tr>
+<td>模 <span class="arithmatex">\(p\)</span> 平方根</td>
+<td><span class="arithmatex">\(a^{\frac{p+1}{4}}\)</span>（<span class="arithmatex">\(p \equiv 3 \pmod 4\)</span>）</td>
+<td>特殊情况有公式</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x^2+y^2=p\)</span></td>
+<td><span class="arithmatex">\(p=2\)</span> 或 <span class="arithmatex">\(p \equiv 1 \pmod 4\)</span></td>
+<td>利用 <span class="arithmatex">\(x^2 \equiv -1\)</span> 构造解</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition success">
+<p class="admonition-title">自检清单</p>
+<ul>
+<li>[ ] 能否计算任意奇素数模的Legendre符号？</li>
+<li>[ ] 能否用Jacobi符号方法快速计算Legendre符号？</li>
+<li>[ ] 是否理解二次互反律的三种情况？</li>
+<li>[ ] 能否求 <span class="arithmatex">\(p \equiv 3 \pmod{4}\)</span> 时的模 <span class="arithmatex">\(p\)</span> 平方根？</li>
+<li>[ ] 能否将模 <span class="arithmatex">\(p\)</span> 的解提升到模 <span class="arithmatex">\(p^\alpha\)</span> 的解？</li>
+<li>[ ] 能否用CRT组合模各素因子幂的解？</li>
+<li>[ ] 是否理解 <span class="arithmatex">\(x^2 + y^2 = p\)</span> 的构造性证明？</li>
+</ul>
+</div>
+<hr />
+<h1 id="_2">四章综合概念图</h1>
+<pre class="mermaid"><code>graph TB
+    subgraph Ch1["第1章 整数的可除性"]
+        GCD["GCD / 扩展Euclidean"]
+        PRIME["素数 / 分解定理"]
+        BEZOUT["Bézout等式"]
+    end
+
+    subgraph Ch2["第2章 同余"]
+        CONG["同余 / 剩余类"]
+        EULER_PHI["Euler函数 φ(m)"]
+        EULER_THM["Euler定理"]
+        FERMAT["Fermat小定理"]
+        WILSON["Wilson定理"]
+    end
+
+    subgraph Ch3["第3章 同余式"]
+        LINCONG["线性同余式"]
+        CRT["中国剩余定理"]
+        HENSEL["Hensel引理"]
+    end
+
+    subgraph Ch4["第4章 二次同余式"]
+        QR["二次剩余/非剩余"]
+        LEGENDRE["Legendre符号"]
+        RECIP["二次互反律"]
+        JACOBI["Jacobi符号"]
+        SQRT["模平方根"]
+        SUMSQ["x²+y²=p"]
+    end
+
+    GCD --&gt; LINCONG
+    BEZOUT --&gt; LINCONG
+    PRIME --&gt; CONG
+    CONG --&gt; EULER_PHI
+    EULER_PHI --&gt; EULER_THM
+    EULER_THM --&gt; QR
+    FERMAT --&gt; EULER_THM
+    LINCONG --&gt; CRT
+    CRT --&gt; HENSEL
+    HENSEL --&gt; SQRT
+    QR --&gt; LEGENDRE
+    LEGENDRE --&gt; RECIP
+    RECIP --&gt; JACOBI
+    QR --&gt; SQRT
+    EULER_THM --&gt; SQRT
+    SQRT --&gt; SUMSQ</code></pre>
+<hr />
+<h1 id="_3">密码学应用速查</h1>
+<div class="admonition info">
+<p class="admonition-title">RSA加密中的数学</p>
+<ul>
+<li><strong>第1章</strong>: 大整数分解困难性 ← 算术基本定理</li>
+<li><strong>第2章</strong>: Euler定理 <span class="arithmatex">\(a^{\varphi(n)} \equiv 1\)</span> → 加解密正确性</li>
+<li><strong>第3章</strong>: CRT → RSA解密加速（速度提升约4倍）</li>
+<li><strong>第4章</strong>: 二次剩余 → Rabin密码体制</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Rabin密码体制</p>
+<ul>
+<li>加密: <span class="arithmatex">\(c = m^2 \bmod n\)</span>（<span class="arithmatex">\(n = pq\)</span>）</li>
+<li>解密: 求模 <span class="arithmatex">\(p\)</span> 和模 <span class="arithmatex">\(q\)</span> 的平方根，再用CRT组合</li>
+<li>安全性: 等价于大整数分解问题</li>
+</ul>
+</div>
+<hr />
+<h1 id="_4">常用公式速查卡</h1>
+<table>
+<thead>
+<tr>
+<th>公式</th>
+<th>内容</th>
+<th>条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Euclidean算法</td>
+<td><span class="arithmatex">\((a,b) = (b, a \bmod b)\)</span></td>
+<td><span class="arithmatex">\(b &gt; 0\)</span></td>
+</tr>
+<tr>
+<td>Bézout等式</td>
+<td><span class="arithmatex">\(sa + tb = (a,b)\)</span></td>
+<td><span class="arithmatex">\(a, b\)</span> 不全为0</td>
+</tr>
+<tr>
+<td>Euler函数</td>
+<td><span class="arithmatex">\(\varphi(m) = m\prod(1-1/p_i)\)</span></td>
+<td><span class="arithmatex">\(m = \prod p_i^{\alpha_i}\)</span></td>
+</tr>
+<tr>
+<td>Euler定理</td>
+<td><span class="arithmatex">\(a^{\varphi(m)} \equiv 1 \pmod{m}\)</span></td>
+<td><span class="arithmatex">\((a,m) = 1\)</span></td>
+</tr>
+<tr>
+<td>Fermat小定理</td>
+<td><span class="arithmatex">\(a^{p-1} \equiv 1 \pmod{p}\)</span></td>
+<td><span class="arithmatex">\(p \nmid a\)</span></td>
+</tr>
+<tr>
+<td>Wilson定理</td>
+<td><span class="arithmatex">\((p-1)! \equiv -1 \pmod{p}\)</span></td>
+<td><span class="arithmatex">\(p\)</span> 是素数</td>
+</tr>
+<tr>
+<td>CRT</td>
+<td><span class="arithmatex">\(x \equiv \sum b_i M_i M_i^{-1} \pmod{M}\)</span></td>
+<td><span class="arithmatex">\(m_i\)</span> 两两互素</td>
+</tr>
+<tr>
+<td>Euler判别</td>
+<td><span class="arithmatex">\(a^{(p-1)/2} \equiv \left(\frac{a}{p}\right)\)</span></td>
+<td><span class="arithmatex">\(p\)</span> 奇素数，<span class="arithmatex">\((a,p)=1\)</span></td>
+</tr>
+<tr>
+<td>二次互反律</td>
+<td><span class="arithmatex">\(\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2}\frac{q-1}{2}}\)</span></td>
+<td><span class="arithmatex">\(p,q\)</span> 不同奇素数</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\left(\frac{-1}{p}\right)\)</span></td>
+<td><span class="arithmatex">\((-1)^{(p-1)/2}\)</span></td>
+<td><span class="arithmatex">\(p\)</span> 奇素数</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\left(\frac{2}{p}\right)\)</span></td>
+<td><span class="arithmatex">\((-1)^{(p^2-1)/8}\)</span></td>
+<td><span class="arithmatex">\(p\)</span> 奇素数</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">考试重点提示</p>
+<ol>
+<li><strong>计算题</strong>（必考）: GCD + 扩展Euclidean、Euler函数计算、模幂运算、Legendre/Jacobi符号计算、线性同余式求解、CRT应用、模平方根求解</li>
+<li><strong>证明题</strong>（常考）: Euler定理证明、二次互反律应用、整除性相关证明</li>
+<li><strong>综合题</strong>: 结合多章知识的应用题，如Rabin密码中的解密过程</li>
+<li><strong>编程题</strong>（思考题）: 实现Euler判别、Legendre符号、Jacobi符号、模平方根算法</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../assets/js/mathjax-config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+      
+        <script src="../../../assets/js/read-metrics.js"></script>
+      
+    
+  </body>
+</html>

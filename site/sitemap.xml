@@ -2,46 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://newtars.top/</loc>
-         <lastmod>2026-09-18</lastmod>
-    </url>
-    <url>
-         <loc>https://newtars.top/about/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://newtars.top/as_foreigner/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://newtars.top/as_reader/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://newtars.top/as_staff/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://newtars.top/as_student/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://newtars.top/as_student/preface/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
          <loc>https://newtars.top/as_student/computer_organization/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
-         <loc>https://newtars.top/study/ctf/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <loc>https://newtars.top/as_student/datasecurity_mathematics/</loc>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
-         <loc>https://newtars.top/study/security/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <loc>https://newtars.top/as_student/datasecurity_mathematics/Chapter%201-4/</loc>
+         <lastmod>2026-10-14</lastmod>
     </url>
     <url>
-         <loc>https://newtars.top/tools/</loc>
-         <lastmod>2026-09-18</lastmod>
+         <loc>https://newtars.top/casual_notes/</loc>
+         <lastmod>2026-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://newtars.top/casual_notes/2026-09-22/</loc>
+         <lastmod>2026-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://newtars.top/casual_notes/2026-09-29/</loc>
+         <lastmod>2026-10-14</lastmod>
     </url>
 </urlset>
