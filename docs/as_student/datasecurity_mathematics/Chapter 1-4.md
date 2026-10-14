@@ -51,6 +51,7 @@ graph LR
 
 > [!theorem] Euclidean除法定理
 > 设 $a, b$ 是整数，$b > 0$，则存在唯一的整数 $q$（商）和 $r$（余数）使得：
+>
 > $$a = bq + r, \quad 0 \leq r < b$$
 
 > [!example] 例1.1.1
@@ -96,6 +97,7 @@ graph LR
 
 > [!theorem] Euclidean算法
 > 设 $a, b$ 是正整数，$a > b$。通过连续除法：
+>
 > $$\begin{aligned}
 > a &= bq_1 + r_1, \quad 0 < r_1 < b \\
 > b &= r_1 q_2 + r_2, \quad 0 < r_2 < r_1 \\
@@ -104,24 +106,28 @@ graph LR
 > r_{n-2} &= r_{n-1} q_n + r_n, \quad 0 < r_n < r_{n-1} \\
 > r_{n-1} &= r_n q_{n+1} + 0
 > \end{aligned}$$
+>
 > 则 $(a, b) = r_n$（最后一个非零余数）。
 
 > [!important] 关键性质
 > 在辗转相除过程中：$(a, b) = (b, r_1) = (r_1, r_2) = \cdots = (r_{n-1}, r_n) = r_n$
 
 > [!example] 例: 求 $(288, 123)$
+>
 > $$\begin{aligned}
 > 288 &= 123 \times 2 + 42 \\
 > 123 &= 42 \times 2 + 39 \\
 > 42 &= 39 \times 1 + 3 \\
 > 39 &= 3 \times 13 + 0
 > \end{aligned}$$
+>
 > 所以 $(288, 123) = 3$。
 
 ### 1.3.2 扩展Euclidean算法（Bézout等式）
 
 > [!theorem] Bézout定理
 > 设 $a, b$ 是不全为零的整数，$d = (a, b)$。则存在整数 $s, t$ 使得：
+>
 > $$sa + tb = d$$
 
 > [!algorithm] 扩展Euclidean算法
@@ -134,12 +140,14 @@ graph LR
 > [!example] 例: 求 $s, t$ 使得 $288s + 123t = 3$
 > 
 > 反向代入：
+>
 > $$\begin{aligned}
 > 3 &= 42 - 39 \times 1 \\
 > &= 42 - (123 - 42 \times 2) = 42 \times 3 - 123 \\
 > &= (288 - 123 \times 2) \times 3 - 123 \\
 > &= 288 \times 3 - 123 \times 7
 > \end{aligned}$$
+>
 > 所以 $s = 3, t = -7$，验证：$288 \times 3 + 123 \times (-7) = 864 - 861 = 3$。
 
 ---
@@ -150,6 +158,7 @@ graph LR
 > 设 $a, b$ 是非零整数。$a, b$ 的**最小公倍数**（LCM）是能被 $a$ 和 $b$ 整除的最小正整数，记为 $[a, b]$ 或 $\text{lcm}(a, b)$。
 
 > [!theorem] GCD与LCM的关系
+>
 > $$[a, b] = \frac{|a \cdot b|}{(a, b)}$$
 
 > [!corollary] 若 $(a, b) = 1$，则 $[a, b] = |ab|$。
@@ -162,20 +171,27 @@ graph LR
 
 > [!theorem] 算术基本定理（整数唯一分解定理）
 > 任何大于1的整数 $n$ 都可以唯一地分解为素数的乘积：
+>
 > $$n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}$$
+>
 > 其中 $p_1 < p_2 < \cdots < p_k$ 是素数，$\alpha_i > 0$，且这种分解方式**唯一**（不计排列顺序）。
 
 > [!note] 推论
 > 1. 若 $n = p_1^{\alpha_1} \cdots p_k^{\alpha_k}$，则 $n$ 的正因数个数为：
+>
 > $$\tau(n) = (\alpha_1 + 1)(\alpha_2 + 1) \cdots (\alpha_k + 1)$$
+>
 > 2. 若 $a = p_1^{\alpha_1} \cdots p_k^{\alpha_k}$，$b = p_1^{\beta_1} \cdots p_k^{\beta_k}$（允许某些指数为0），则：
+>
 > $$(a, b) = p_1^{\min(\alpha_1, \beta_1)} \cdots p_k^{\min(\alpha_k, \beta_k)}$$
+>
 > $$[a, b] = p_1^{\max(\alpha_1, \beta_1)} \cdots p_k^{\max(\alpha_k, \beta_k)}$$
 
 ### 1.5.2 素数分布
 
 > [!theorem] 素数定理
 > 设 $\pi(x)$ 表示不超过 $x$ 的素数个数，则：
+>
 > $$\pi(x) \sim \frac{x}{\ln x} \quad (x \to \infty)$$
 
 > [!note] 素数定理的含义
@@ -227,7 +243,9 @@ graph LR
 
 > [!definition] 同余
 > 设 $m > 0$ 是整数（称为**模**），$a, b$ 是整数。如果 $m \mid (a - b)$，则称 $a$ 与 $b$ **模 $m$ 同余**，记为：
+>
 > $$a \equiv b \pmod{m}$$
+>
 > 否则记为 $a \not\equiv b \pmod{m}$。
 
 > [!note] 等价理解
@@ -259,7 +277,9 @@ graph LR
 
 > [!definition] 剩余类
 > 对于模 $m$，将所有与 $a$ 模 $m$ 同余的整数组成一个集合：
+>
 > $$\overline{a} = \{a + km \mid k \in \mathbb{Z}\}$$
+>
 > 称为模 $m$ 的一个**剩余类**。
 
 > [!note] 剩余类的性质
@@ -299,6 +319,7 @@ graph LR
 
 > [!theorem] Euler函数的计算公式
 > 若 $m = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}$，则：
+>
 > $$\varphi(m) = m \prod_{i=1}^{k} \left(1 - \frac{1}{p_i}\right) = m \left(1 - \frac{1}{p_1}\right)\left(1 - \frac{1}{p_2}\right) \cdots \left(1 - \frac{1}{p_k}\right)$$
 
 > [!example] 计算示例
@@ -320,34 +341,42 @@ graph LR
 
 > [!theorem] Euler定理
 > 设 $m > 1$ 是整数，$(a, m) = 1$，则：
+>
 > $$a^{\varphi(m)} \equiv 1 \pmod{m}$$
 
 > [!proof] 证明
 > 设 $a_1, a_2, \dots, a_{\varphi(m)}$ 是模 $m$ 的一个缩系。
 > 因为 $(a, m) = 1$，所以 $aa_1, aa_2, \dots, aa_{\varphi(m)}$ 也构成模 $m$ 的一个缩系。
 > 因此：
+>
 > $$aa_1 \cdot aa_2 \cdots aa_{\varphi(m)} \equiv a_1 \cdot a_2 \cdots a_{\varphi(m)} \pmod{m}$$
+>
 > 即 $a^{\varphi(m)} \cdot (a_1 a_2 \cdots a_{\varphi(m)}) \equiv a_1 a_2 \cdots a_{\varphi(m)} \pmod{m}$
 > 因为 $(a_i, m) = 1$，所以 $(a_1 a_2 \cdots a_{\varphi(m)}, m) = 1$，可以约去，得到：
+>
 > $$a^{\varphi(m)} \equiv 1 \pmod{m}$$
+>
 > 证毕。
 
 ### 2.4.2 Fermat小定理
 
 > [!theorem] Fermat小定理
 > 设 $p$ 是素数，$p \nmid a$，则：
+>
 > $$a^{p-1} \equiv 1 \pmod{p}$$
 
 > [!note] 与Euler定理的关系
 > Fermat小定理是Euler定理当 $m = p$ 时的特例，因为 $\varphi(p) = p - 1$。
 
 > [!corollary] 对任意整数 $a$ 和素数 $p$：
+>
 > $$a^p \equiv a \pmod{p}$$
 
 ### 2.4.3 Wilson定理
 
 > [!theorem] Wilson定理
 > 设 $p$ 是素数，则：
+>
 > $$(p-1)! \equiv -1 \pmod{p}$$
 
 > [!note] Wilson定理的意义
@@ -420,7 +449,9 @@ graph LR
 ### 3.1.1 基本形式与解
 
 > [!definition] 一元线性同余式
+>
 > $$ax \equiv b \pmod{m}$$
+>
 > 其中 $a, b, m$ 为整数，$m > 0$。
 
 > [!theorem] 线性同余式的解
@@ -449,17 +480,22 @@ graph LR
 
 > [!theorem] 中国剩余定理（孙子定理）
 > 设 $m_1, m_2, \dots, m_k$ 两两互素，$M = m_1 m_2 \cdots m_k$。则对任意整数 $b_1, b_2, \dots, b_k$，同余式组：
+>
 > $$\begin{cases}
 > x \equiv b_1 \pmod{m_1} \\
 > x \equiv b_2 \pmod{m_2} \\
 > \quad \vdots \\
 > x \equiv b_k \pmod{m_k}
 > \end{cases}$$
+>
 > 有唯一解（模 $M$），且解为：
+>
 > $$x \equiv \sum_{i=1}^{k} b_i M_i M_i^{-1} \pmod{M}$$
+>
 > 其中 $M_i = M / m_i$，$M_i^{-1}$ 是 $M_i$ 模 $m_i$ 的逆元。
 
 > [!example] 例: 求解同余式组
+>
 > $$\begin{cases} x \equiv 2 \pmod{3} \\ x \equiv 3 \pmod{5} \\ x \equiv 2 \pmod{7} \end{cases}$$
 > 
 > $M = 105$，$M_1 = 35, M_2 = 21, M_3 = 15$
@@ -479,30 +515,38 @@ graph LR
 ### 3.3.1 高次同余式的概念
 
 > [!definition] 高次同余式
+>
 > $$f(x) \equiv 0 \pmod{m}$$
+>
 > 其中 $f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$ 是整系数多项式。
 
 ### 3.3.2 模为合数时的化简
 
 > [!theorem] 合数模的分解
 > 设 $m = m_1 m_2 \cdots m_k$，$m_1, m_2, \dots, m_k$ 两两互素。则同余式 $f(x) \equiv 0 \pmod{m}$ 等价于同余式组：
+>
 > $$\begin{cases}
 > f(x) \equiv 0 \pmod{m_1} \\
 > f(x) \equiv 0 \pmod{m_2} \\
 > \quad \vdots \\
 > f(x) \equiv 0 \pmod{m_k}
 > \end{cases}$$
+>
 > 若各同余式 $f(x) \equiv 0 \pmod{m_i}$ 分别有 $T_i$ 个解，则原同余式有 $T_1 T_2 \cdots T_k$ 个解。
 
 ### 3.3.3 Hensel引理（同余式的提升）
 
 > [!theorem] Hensel引理
 > 设 $p$ 是素数，$f(x)$ 是整系数多项式。若 $x \equiv x_1 \pmod{p}$ 是 $f(x) \equiv 0 \pmod{p}$ 的解，且：
+>
 > $$f'(x_1) \not\equiv 0 \pmod{p}$$
+>
 > 则存在唯一的 $x \equiv x_\alpha \pmod{p^\alpha}$ 使得：
+>
 > $$f(x_\alpha) \equiv 0 \pmod{p^\alpha}, \quad x_\alpha \equiv x_1 \pmod{p}$$
 > 
 > **提升公式**: 从 $x_k$（模 $p^k$ 的解）提升到 $x_{k+1}$（模 $p^{k+1}$ 的解）：
+>
 > $$x_{k+1} \equiv x_k - f(x_k) \cdot (f'(x_k))^{-1} \pmod{p^{k+1}}$$
 
 > [!important] Hensel引理的意义
@@ -526,7 +570,9 @@ graph LR
 
 > [!theorem] 带余除法
 > 设 $p$ 是素数，$f(x), g(x)$ 是整系数多项式，$p \nmid \text{lc}(g)$。则存在整系数多项式 $q(x), r(x)$ 使得：
+>
 > $$f(x) = g(x) q(x) + r(x), \quad \deg r < \deg g$$
+>
 > 且系数均模 $p$ 意义下唯一。
 
 ---
@@ -571,9 +617,13 @@ graph LR
 
 > [!theorem] 二次同余式的化简
 > 一般二次同余式：
+>
 > $$ax^2 + bx + c \equiv 0 \pmod{m}, \quad (a, m) = 1$$
+>
 > 配方后可化为：
+>
 > $$y^2 \equiv d \pmod{m}$$
+>
 > 其中 $y = 2ax + b$，$d = b^2 - 4ac$。
 
 > [!note] 化简的前提
@@ -604,11 +654,14 @@ graph LR
 
 > [!theorem] Euler判别法则
 > 设 $p$ 是奇素数，$(a, p) = 1$，则：
+>
 > $$a^{\frac{p-1}{2}} \equiv \begin{cases} 1 \pmod{p}, & \text{若 } a \text{ 是模 } p \text{ 的二次剩余} \\ -1 \pmod{p}, & \text{若 } a \text{ 是模 } p \text{ 的二次非剩余} \end{cases}$$
 
 > [!proof] 证明
 > **必要性（QR方向）**: 若 $x^2 \equiv a \pmod{p}$ 有解 $x_0$，则：
+>
 > $$a^{\frac{p-1}{2}} \equiv (x_0^2)^{\frac{p-1}{2}} = x_0^{p-1} \equiv 1 \pmod{p}$$
+>
 > （由Fermat小定理）
 > 
 > **必要性（QNR方向）**: $a^{\frac{p-1}{2}}$ 满足 $y^2 \equiv 1 \pmod{p}$，所以 $a^{\frac{p-1}{2}} \equiv \pm 1 \pmod{p}$。
@@ -628,6 +681,7 @@ graph LR
 
 > [!definition] Legendre符号
 > 设 $p$ 是奇素数，整数 $a$。定义：
+>
 > $$\left(\frac{a}{p}\right) = \begin{cases} 0, & p \mid a \\ 1, & a \text{ 是模 } p \text{ 的二次剩余} \\ -1, & a \text{ 是模 } p \text{ 的二次非剩余} \end{cases}$$
 
 > [!theorem] Legendre符号的性质
@@ -642,6 +696,7 @@ graph LR
 > [!theorem] Gauss引理
 > 设 $p$ 是奇素数，$(a, p) = 1$。考虑序列 $a, 2a, 3a, \dots, \frac{p-1}{2} a$。
 > 设其中模 $p$ 的最小正剩余大于 $\frac{p}{2}$ 的个数为 $n$，则：
+>
 > $$\left(\frac{a}{p}\right) = (-1)^n$$
 
 > [!note] Gauss引理的应用
@@ -651,9 +706,11 @@ graph LR
 
 > [!theorem] 二次互反律
 > 设 $p, q$ 是不同的奇素数，则：
+>
 > $$\left(\frac{p}{q}\right)\left(\frac{q}{p}\right) = (-1)^{\frac{p-1}{2} \cdot \frac{q-1}{2}}$$
 > 
 > 等价地：
+>
 > $$\left(\frac{p}{q}\right) = \begin{cases} \left(\frac{q}{p}\right), & \text{若 } p \equiv 1 \pmod{4} \text{ 或 } q \equiv 1 \pmod{4} \\ -\left(\frac{q}{p}\right), & \text{若 } p \equiv q \equiv 3 \pmod{4} \end{cases}$$
 
 > [!important] 二次互反律的补充定律
@@ -679,6 +736,7 @@ graph LR
 
 > [!definition] Jacobi符号
 > 设 $n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}$ 是正奇数（标准分解），$a$ 是整数。定义：
+>
 > $$\left(\frac{a}{n}\right) = \prod_{i=1}^{k} \left(\frac{a}{p_i}\right)^{\alpha_i}$$
 
 > [!warning] 关键区别
@@ -692,6 +750,7 @@ graph LR
 
 > [!theorem] Jacobi符号的二次互反律
 > 设 $m, n$ 是正奇数，$(m, n) = 1$，则：
+>
 > $$\left(\frac{m}{n}\right)\left(\frac{n}{m}\right) = (-1)^{\frac{m-1}{2} \cdot \frac{n-1}{2}}$$
 > 
 > 补充定律：
@@ -708,7 +767,9 @@ graph LR
 > 时间复杂度：$O(\log^2 n)$
 
 > [!example] 计算 $\left(\frac{158}{379}\right)$（实际是Legendre符号，用Jacobi符号方法快速计算）
+>
 > $$\left(\frac{158}{379}\right) = \left(\frac{2}{379}\right)\left(\frac{79}{379}\right)$$
+>
 > $379 \equiv 3 \pmod{8}$，所以 $\left(\frac{2}{379}\right) = -1$
 > 
 > $\left(\frac{79}{379}\right)$: $79 \equiv 3 \pmod{4}$，$379 \equiv 3 \pmod{4}$，所以
@@ -724,7 +785,9 @@ graph LR
 
 > [!theorem] 简单情形
 > 若 $p \equiv 3 \pmod{4}$ 是素数且 $\left(\frac{a}{p}\right) = 1$，则：
+>
 > $$x \equiv \pm a^{\frac{p+1}{4}} \pmod{p}$$
+>
 > 是 $x^2 \equiv a \pmod{p}$ 的解。
 
 > [!proof] 验证
